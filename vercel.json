@@ -1,0 +1,16 @@
+{
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "installCommand": "bun install",
+        "buildCommand": "bun run build:vite",
+        "distDir": "dist"
+      }
+    }
+  ],
+  "rewrites": [
+    { "source": "/((?!assets|data|icons|fonts|sounds|wallpapers|version.json|manifest.json|sw.js|workbox-.*).*)", "destination": "/index.html" }
+  ]
+}

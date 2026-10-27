@@ -124,12 +124,6 @@ export const DEFAULT_VIDEOS: Video[] = [
     title: "A Conversation with Jony Ive",
     artist: "Jony Ive",
   },
-  {
-    id: "TQhv6Wol6Ns",
-    url: "https://www.youtube.com/watch?v=TQhv6Wol6Ns&t=26s",
-    title: "Our designer built an OS with Cursor",
-    artist: "Cursor",
-  },
 ];
 
 interface VideoStoreState {
