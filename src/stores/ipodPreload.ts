@@ -12,6 +12,23 @@ import { createClientLogger } from "@/utils/logger";
 
 const log = createClientLogger("IpodPreload");
 
+const FALLBACK_TRACKS: Track[] = [
+  { id: "Ouem6cFXJvA", url: "https://www.youtube.com/watch?v=Ouem6cFXJvA", title: "Your Dog", artist: "Soccer Mommy" },
+  { id: "BL2r9FZdJbo", url: "https://www.youtube.com/watch?v=BL2r9FZdJbo", title: "LOOK OUT FOR ME: KETTAMA VERSION", artist: "TURNSTILE" },
+  { id: "ojCikI9npJQ", url: "https://www.youtube.com/watch?v=ojCikI9npJQ", title: "I'll Be Around", artist: "The Spinners" },
+  { id: "36_4xjLFjM0", url: "https://www.youtube.com/watch?v=36_4xjLFjM0", title: "1901", artist: "Phoenix" },
+  { id: "4oSjO9FP5t4", url: "https://www.youtube.com/watch?v=4oSjO9FP5t4", title: "Can't Decide", artist: "Max Dean, Luke Dean, Locky" },
+  { id: "AE8y25CcE6s", url: "https://www.youtube.com/watch?v=AE8y25CcE6s", title: "Through The Wire", artist: "Kanye West" },
+  { id: "sk3rpYkiHe8", url: "https://www.youtube.com/watch?v=sk3rpYkiHe8", title: "Devil In A New Dress", artist: "Kanye West" },
+  { id: "SycVgytRTQ4", url: "https://www.youtube.com/watch?v=SycVgytRTQ4", title: "Fallin' For You", artist: "Colbie Caillat" },
+  { id: "dAUUy7NMnaY", url: "https://www.youtube.com/watch?v=dAUUy7NMnaY", title: "Ventura Highway", artist: "America" },
+  { id: "Cl6Rz1Uvi2M", url: "https://www.youtube.com/watch?v=Cl6Rz1Uvi2M", title: "Delilah (pull me out of this)", artist: "Fred again.." },
+  { id: "FGBhQbmPwH8", url: "https://www.youtube.com/watch?v=FGBhQbmPwH8", title: "One More Time", artist: "Daft Punk" },
+  { id: "K0HSD_i2DvA", url: "https://www.youtube.com/watch?v=K0HSD_i2DvA", title: "Around The World", artist: "Daft Punk" },
+  { id: "ajUMhpotf8k", url: "https://www.youtube.com/watch?v=ajUMhpotf8k", title: "Talk To You", artist: "ANOTR ft. 54 Ultra" },
+  { id: "d2iWMT9lBb4", url: "https://www.youtube.com/watch?v=d2iWMT9lBb4", title: "Think of You", artist: "KETTAMA, Prospa" },
+];
+
 // In-memory cache for iPod tracks data
 let cachedIpodData: { tracks: Track[]; version: number } | null = null;
 let ipodDataPromise: Promise<{ tracks: Track[]; version: number }> | null =
@@ -61,8 +78,9 @@ export async function loadDefaultTracks(forceRefresh = false): Promise<{
         createdBy: "ryo",
       });
       // Songs are already sorted by createdAt (newest first) from the API
-      const tracks: Track[] = cachedSongs.map(mapCatalogSongToTrack);
-      // Use the latest createdAt timestamp as version (or 1 if empty)
+      const tracks: Track[] = cachedSongs.length > 0
+        ? cachedSongs.map(mapCatalogSongToTrack)
+        : FALLBACK_TRACKS;
       const version =
         cachedSongs.length > 0
           ? Math.max(...cachedSongs.map((s) => s.createdAt || 1))
@@ -75,8 +93,8 @@ export async function loadDefaultTracks(forceRefresh = false): Promise<{
       // A newer load won the race; prefer latest cache so awaiters do not apply stale tracks.
       return cachedIpodData ?? payload;
     } catch (err) {
-      console.error("Failed to load tracks from cache", err);
-      return { tracks: [], version: 1 };
+      console.error("Failed to load tracks from cache, using fallback playlist", err);
+      return { tracks: FALLBACK_TRACKS, version: 1 };
     }
   })();
 
