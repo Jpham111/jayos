@@ -263,7 +263,7 @@ export function AboutFinderDialog({
                     : "font-os-ui text-xl"
                 )}
               >
-                ryOS
+                jayOS
                 {currentTheme === "system7"
                   ? " 7"
                   : currentTheme === "macosx"
@@ -325,7 +325,7 @@ export function AboutFinderDialog({
                     : undefined
                 }
               >
-                <p>© Ryo Lu. 1992-{new Date().getFullYear()}</p>
+                <p>© Jay Pham. {new Date().getFullYear()}</p>
                 <p>
                   {isMac && desktopDownloadUrl && (
                     <>

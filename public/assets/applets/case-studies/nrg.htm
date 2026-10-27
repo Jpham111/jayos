@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>National Research Group</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',sans-serif;background:#0a0a0a;color:#d4d4d4;line-height:1.75;-webkit-font-smoothing:antialiased}
+.container{max-width:680px;margin:0 auto;padding:48px 24px 96px}
+h1{font-size:28px;font-weight:700;color:#fff;margin-bottom:4px;letter-spacing:-0.5px}
+.meta{font-size:13px;color:#666;margin-bottom:32px;line-height:1.6}
+h2{font-size:20px;font-weight:600;color:#fff;margin-top:48px;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid #1a1a1a}
+h3{font-size:16px;font-weight:600;color:#e0e0e0;margin-top:28px;margin-bottom:10px}
+p{margin-bottom:16px;font-size:15px}
+img{width:100%;border-radius:8px;margin:24px 0}
+ul,ol{margin:12px 0 16px;padding-left:22px}
+li{margin-bottom:6px;font-size:15px}
+strong{color:#fff}
+em{color:#999}
+hr{border:none;border-top:1px solid #1a1a1a;margin:36px 0}
+.results{background:#111;border:1px solid #1a1a1a;border-radius:10px;padding:20px 24px;margin:20px 0}
+.results li{color:#7dd3fc}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:24px}
+.tag{background:#1a1a2e;color:#818cf8;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:500}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>National Research Group</h1>
+<div class="meta">
+<strong>Role:</strong> Product Designer<br>
+<strong>Timeline:</strong> Feb 2024 – Apr 2025<br>
+<strong>Team:</strong> 5-person cross-functional team
+</div>
+<div class="tags">
+<span class="tag">B2B SaaS</span>
+<span class="tag">Data Tools</span>
+<span class="tag">Interaction Design</span>
+<span class="tag">Accessibility</span>
+</div>
+
+<h2>The Problem</h2>
+<p>NRG's internal SEO tools had a usability problem that was costing more than time. Researchers and analysts were submitting malformed data — not because they were careless, but because the interface gave them no feedback until it was too late. Invalid inputs would pass through, corrupt downstream datasets, and create hours of cleanup work.</p>
+<p>The bigger issue: it was a recurring problem. That meant it wasn't a user training issue — it was a design issue.</p>
+
+<h2>Impact</h2>
+<div class="results">
+<ul>
+<li>Daily active usage up ~65% in the 3 months after redesign</li>
+<li>Users completed standard analysis tasks ~50% faster on average (moderated usability sessions, n=8)</li>
+<li>First report creation time dropped from ~47 min to under 15 min</li>
+<li>9 of 10 usability participants rated navigation "intuitive" or "very intuitive"</li>
+<li>4.6/5 average satisfaction (post-launch internal survey, n=31)</li>
+</ul>
+</div>
+
+<h2>What I Found</h2>
+<p>I started with a usability audit of the existing input flows — specifically the validation patterns, error states, and inline microcopy. What I found was a system that was functionally complete but interaction-design empty. Fields accepted bad data silently. Errors appeared only after submission. The feedback loop was broken.</p>
+<h3>The Decision I Pushed For</h3>
+<p>The team pushed hard for a customizable dashboard — drag-and-drop charts, user-configurable layouts. I pushed back for weeks. The real problem wasn't that users wanted more control over their view; it was that they didn't know what to look at when they first arrived. A fixed, opinionated layout with strong visual hierarchy solved the "where do I start?" problem that customization would have buried. We shipped without drag-and-drop. Nobody asked for it after launch.</p>
+<h3>The Mobile Pivot</h3>
+<p>The 40% mobile access rate that surfaced mid-project forced a significant pivot. Policy researchers are frequently in meetings, reviewing data on phones, making decisions away from a desk. Mobile wasn't a nice-to-have — it was a use case the tool was actively failing.</p>
+
+<h2>Market Research</h2>
+<ul>
+<li><strong>Tableau:</strong> Powerful but requires training most analysts don't have time for</li>
+<li><strong>Google Analytics:</strong> Too technical for policy-focused workflows</li>
+<li><strong>Custom dashboards:</strong> Expensive and slow to iterate</li>
+</ul>
+<p>The gap: tools built for analysts, not for the researchers and policy makers who actually needed to act on the data.</p>
+
+<h2>How I Designed It</h2>
+<h3>Rebuilt Input Validation from the Component Level Up</h3>
+<p>Inline validation that fires on blur, not on submit. Field-level error states that tell users exactly what went wrong and why — not generic "invalid input" messages.</p>
+<h3>Redesigned for Accessibility</h3>
+<p>Semantic structure, proper ARIA labeling, color contrast meeting WCAG AA. Accessibility wasn't retrofitted — it was part of the component spec from the first wireframe.</p>
+<h3>Fixed the Information Hierarchy</h3>
+<p>An opinionated dashboard layout with clear visual priority replaced the cluttered everything-at-once model.</p>
+<h3>Mobile-First from the Pivot Onward</h3>
+<p>Responsive layouts, touch-friendly tap targets, a schedule view optimized for small screens.</p>
+<img src="/assets/images/portfolio/information-architecture-nrg.jpeg" alt="Information Architecture">
+
+<h2>Final Designs</h2>
+<img src="/assets/images/portfolio/ab-test-nrg.jpg" alt="A/B Test Results">
+<img src="/assets/images/portfolio/nrg-revenue-growth-roi.jpg" alt="Revenue Growth & ROI Dashboard">
+<img src="/assets/images/portfolio/nrg-customer-segment-value.jpg" alt="Customer Segment Value Dashboard">
+
+<h2>Reflection</h2>
+<p><strong>What I'd do differently:</strong> I should have gotten to the mobile data earlier. The 40% mobile access rate was in the analytics the whole time — we just weren't looking at it as a design signal until mid-project.</p>
+<p><strong>What I took from this:</strong> The recurring data corruption problem looked like a user error problem from the outside. It was actually a feedback timing problem — the interface was telling users too late that something was wrong. Framing it that way changed what we designed: not better error messages, but earlier ones.</p>
+</div>
+</body>
+</html>

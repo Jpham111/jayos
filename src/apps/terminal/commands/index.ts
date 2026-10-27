@@ -37,7 +37,7 @@ export const commands: Record<string, Command> = {
   about: aboutCommand,
   ai: aiCommand,
   chat: chatCommand,
-  ryo: ryoCommand,
+  jay: ryoCommand,
   vim: vimCommand,
   open: openCommand,
   grep: grepCommand,

@@ -146,6 +146,10 @@ export default defineConfig({
   server: {
     port: process.env.PORT ? Number(process.env.PORT) : 5173,
     cors: { origin: ["*"] },
+    fs: {
+      strict: true,
+      allow: [__dirname],
+    },
     ...(standaloneApiProxyTarget
       ? {
           proxy: {
@@ -224,6 +228,10 @@ export default defineConfig({
       // Motion (motion/react) is used on initial load for animations
       "motion/react",
       "motion",
+      // CJS shim must be pre-bundled so Vite can convert to ESM
+      "use-sync-external-store",
+      "use-sync-external-store/shim",
+      "use-sync-external-store/shim/with-selector",
       // Force cjs-interop pre-bundling for tone's transitive CJS deps.
       // "tone" itself is excluded (see below) so it's served unbundled in
       // dev, but its nested deps are UMD/CJS builds with no static ESM
@@ -243,11 +251,6 @@ export default defineConfig({
       "audio-buffer-utils",
       // 3D rendering - only needed when PC app opens
       "three",
-      // Rich text editor - only needed when TextEdit opens
-      "@tiptap/core",
-      "@tiptap/react",
-      "@tiptap/starter-kit",
-      "@tiptap/pm",
       // Realtime chat - only needed when Chats opens
       "pusher-js",
       // QR codes - only needed for specific features
@@ -808,10 +811,12 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+      "react": path.resolve(__dirname, "node_modules/react"),
+      "react-dom": path.resolve(__dirname, "node_modules/react-dom"),
     },
     // Keep a single @zxing/library instance so ReaderException instanceof
     // checks (and Stuff's warn filter) behave correctly across @zxing/browser.
-    dedupe: ["@zxing/library"],
+    dedupe: ["@zxing/library", "react", "react-dom"],
   },
   build: {
     // Target modern browsers for smaller bundles

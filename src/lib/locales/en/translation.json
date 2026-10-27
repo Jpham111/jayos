@@ -138,13 +138,13 @@
       "restoringSystem": "Restoring System…",
       "formattingFileSystem": "Formatting File System…",
       "debugBootScreenTest": "Debug Boot Screen Test…",
-      "updatingToRyOS": "Updating to ryOS {{version}}…",
-      "updatingToRyOSWithBuild": "Updating to ryOS {{version}} ({{buildNumber}})…",
+      "updatingToRyOS": "Updating to jayOS {{version}}…",
+      "updatingToRyOSWithBuild": "Updating to jayOS {{version}} ({{buildNumber}})…",
       "rebooting": "Rebooting…",
       "resetAllSettings": "Reset All Settings",
-      "resetAllSettingsDesc": "Are you sure you want to reset all settings? This will clear all saved settings and restore default states. ryOS will restart after reset.",
+      "resetAllSettingsDesc": "Are you sure you want to reset all settings? This will clear all saved settings and restore default states. jayOS will restart after reset.",
       "formatFileSystem": "Format File System",
-      "formatFileSystemDesc": "Are you sure you want to format the file system? This will permanently delete all documents (except sample documents), images, and custom wallpapers. ryOS will restart after format."
+      "formatFileSystemDesc": "Are you sure you want to format the file system? This will permanently delete all documents (except sample documents), images, and custom wallpapers. jayOS will restart after format."
     },
     "desktop": {
       "setWallpaper": "Set Wallpaper…",
@@ -176,7 +176,7 @@
       "appDescription": "Relaunch it to open a fresh window, or quit this crashed window. Other open apps will keep running.",
       "relaunch": "Relaunch",
       "desktopHeading": "Desktop quit unexpectedly",
-      "desktopDescription": "Reload ryOS to restore the Dock, Desktop, and menu bar.",
+      "desktopDescription": "Reload jayOS to restore the Dock, Desktop, and menu bar.",
       "reloadDesktop": "Reload Desktop"
     },
     "keys": {
@@ -224,7 +224,7 @@
       "genericError": "Oops, something tangled me up. Try again in a moment! 📎",
       "greetings": {
         "hello": "Hi there! I'm {{name}}, your desktop assistant. Click me if you need anything! 👋",
-        "help": "It looks like you're using ryOS! Need a hand with anything? I'm {{name}}, happy to help. 📎",
+        "help": "It looks like you're using jayOS! Need a hand with anything? I'm {{name}}, happy to help. 📎",
         "looksLike": "Hello! {{name}} here — I can open apps, play music, or answer questions. Just ask! ✨",
         "tip": "Hey! I'm {{name}}. Tip: you can drag me anywhere, and I'll snap to your windows and dock. 🪄"
       },
@@ -254,7 +254,7 @@
     },
     "aboutThisMac": {
       "title": "About This Computer",
-      "description": "Information about ryOS on this computer",
+      "description": "Information about jayOS on this computer",
       "builtInMemory": "Built-in Memory",
       "virtualMemory": "Virtual Memory",
       "virtualMemoryOff": "Off",
@@ -274,17 +274,17 @@
       "updatingAssets": "Updating assets",
       "files": "files",
       "total": "total",
-      "updateReady": "Update ready for ryOS {{version}} ({{buildNumber}})",
+      "updateReady": "Update ready for jayOS {{version}} ({{buildNumber}})",
       "reboot": "Reboot",
       "failedToCacheAssets": "Failed to cache assets",
       "failedToLoadAssetManifest": "Failed to load asset manifest",
       "noAssetsToCache": "No assets to cache",
       "alreadyLatestVersion": "Already using the latest version",
-      "alreadyLatestVersionDetail": "ryOS {{version}} ({{buildNumber}})",
+      "alreadyLatestVersionDetail": "jayOS {{version}} ({{buildNumber}})",
       "couldNotCheckUpdates": "Couldn't check for updates"
     },
     "auth": {
-      "dialogTitle": "Sign In to ryOS",
+      "dialogTitle": "Sign In to jayOS",
       "username": "User name",
       "password": "Password",
       "logIn": "Sign In",
@@ -358,8 +358,8 @@
       "full": "Full",
       "toggleCode": "Toggle code",
       "exitFullscreen": "Exit fullscreen",
-      "codePreviewTitle": "ryOS Code Preview",
-      "codePreviewTitleFullscreen": "ryOS Code Preview Fullscreen"
+      "codePreviewTitle": "jayOS Code Preview",
+      "codePreviewTitleFullscreen": "jayOS Code Preview Fullscreen"
     },
     "swipeInstructions": {
       "title": "Swipe to Switch Windows",
@@ -370,7 +370,7 @@
   },
   "spotlight": {
     "title": "Spotlight",
-    "placeholder": "Search ryOS",
+    "placeholder": "Search jayOS",
     "sections": {
       "apps": "Applications",
       "documents": "Documents",
@@ -384,7 +384,7 @@
       "commands": "Commands"
     },
     "topHits": "Top Hits",
-    "askRyo": "Ask Ryo",
+    "askRyo": "Ask Jay",
     "noResults": "No results found",
     "hintClose": "close",
     "hintOpen": "open",
@@ -445,7 +445,7 @@
         },
         "airdropSharing": {
           "title": "AirDrop Sharing",
-          "description": "Control-click any file to AirDrop it to nearby ryOS users instantly"
+          "description": "Control-click any file to AirDrop it to nearby jayOS users instantly"
         },
         "dropToImport": {
           "title": "Drop to Import",
@@ -662,7 +662,7 @@
       "error": "Error",
       "anErrorOccurred": "An error occurred",
       "pageLoadTimedOutTitle": "Page stopped",
-      "pageLoadTimedOut": "The page took too long to load. Internet Explorer stopped waiting to keep ryOS responsive.",
+      "pageLoadTimedOut": "The page took too long to load. Internet Explorer stopped waiting to keep jayOS responsive.",
       "checkWebAddressAndTryAgain": "Check the web address you typed and try again.",
       "goBackToPreviousPage": "Go back to the previous page.",
       "tryRefreshingThePage": "Try refreshing the page.",
@@ -844,20 +844,20 @@
       },
       "help": {
         "chatWithRyo": {
-          "title": "Chat with Ryo",
-          "description": "Ask anything — Ryo can write code, summarize docs, or explain ryOS features."
+          "title": "Chat with Jay",
+          "description": "Ask anything — Jay can write code, summarize docs, or explain jayOS features."
         },
         "createEditFiles": {
           "title": "Create & Edit Files",
-          "description": "Tell Ryo to spin up HTML applets, edit your TextEdit documents, or browse the Applet Store."
+          "description": "Tell Jay to spin up HTML applets, edit your TextEdit documents, or browse the Applet Store."
         },
         "controlApps": {
           "title": "Control Your OS",
-          "description": "Ryo can open apps, switch themes, move stickies, tune the TV, and play iPod songs."
+          "description": "Jay can open apps, switch themes, move stickies, tune the TV, and play iPod songs."
         },
         "joinChatRooms": {
           "title": "Join Public Rooms",
-          "description": "Hop into rooms to chat with everyone online — mention @ryo to get AI replies."
+          "description": "Hop into rooms to chat with everyone online — mention @jay to get AI replies."
         },
         "pushToTalk": {
           "title": "Push-to-Talk Voice",
@@ -865,7 +865,7 @@
         },
         "nudgeDjMode": {
           "title": "Nudge & DJ Mode",
-          "description": "Send a 👋 nudge for context-aware tips; Ryo turns into a DJ when iPod is playing."
+          "description": "Send a 👋 nudge for context-aware tips; Jay turns into a DJ when iPod is playing."
         }
       },
       "dialogs": {
@@ -898,17 +898,17 @@
         "failedToCreateRoom": "Failed to create room"
       },
       "status": {
-        "loginToRyOS": "Sign in to ryOS",
+        "loginToRyOS": "Sign in to jayOS",
         "loginToChat": "Sign in to Chats",
         "clear": "Clear",
         "leave": "Leave",
-        "ryo": "@ryo",
+        "ryo": "@jay",
         "chatRequiresInternet": "Chat requires an internet connection",
-        "ryoWillRespond": "Ryo will respond to this message",
+        "ryoWillRespond": "Jay will respond to this message",
         "usingModel": "Using {{model}}",
         "noTranscriptionText": "No transcription text received",
         "dailyLimitReached": "Daily AI message limit reached.",
-        "loginToContinue": "Sign in to continue chatting with Ryo.",
+        "loginToContinue": "Sign in to continue chatting with Jay.",
         "sessionExpired": "Session expired. Sign in again.",
         "loginRequired": "Sign In Required",
         "pleaseLoginToSendMessages": "Sign in to send messages.",
@@ -935,7 +935,7 @@
       },
       "ariaLabels": {
         "sendNudge": "Send a Nudge",
-        "mentionRyo": "Mention Ryo",
+        "mentionRyo": "Mention Jay",
         "pushToTalk": "Push to Talk",
         "attachImage": "Attach image",
         "selectedImage": "Selected image",
@@ -959,9 +959,9 @@
       },
       "messages": {
         "you": "You",
-        "ryo": "Ryo",
+        "ryo": "Jay",
         "delete": "Delete",
-        "greeting": "👋 hey! i'm ryo. ask me anything!"
+        "greeting": "👋 hey! i'm jay. ask me anything!"
       },
       "toasts": {
         "loginRequired": "Sign In Required",
@@ -1337,8 +1337,8 @@
         "location": {
           "requesting": "Requesting location…",
           "permissionTitle": "Use your precise location?",
-          "permissionBody": "Ryo wants to use your precise location to answer this request.",
-          "permissionReason": "Ryo wants your precise location {{reason}}.",
+          "permissionBody": "Jay wants to use your precise location to answer this request.",
+          "permissionReason": "Jay wants your precise location {{reason}}.",
           "allow": "Allow",
           "dontAllow": "Don’t Allow",
           "gettingLocation": "Getting your location…",
@@ -1480,7 +1480,7 @@
         },
         "aiCoEditor": {
           "title": "AI Co-Editor",
-          "description": "Ask Ryo in Chats to read, summarize, or rewrite the open document"
+          "description": "Ask Jay in Chats to read, summarize, or rewrite the open document"
         },
         "voiceDictation": {
           "title": "Voice Dictation",
@@ -1794,7 +1794,7 @@
       "help": {
         "addVideo": {
           "title": "Add from YouTube",
-          "description": "Paste any YouTube URL and ryOS fetches the metadata into your playlist"
+          "description": "Paste any YouTube URL and jayOS fetches the metadata into your playlist"
         },
         "playback": {
           "title": "Classic Playback",
@@ -1809,7 +1809,7 @@
           "description": "Toggle shuffle to randomize playlist order without losing your queue"
         },
         "powersTv": {
-          "title": "Powers Ryo TV",
+          "title": "Powers Jay TV",
           "description": "Your playlist also feeds the TV app's curated channel lineup"
         },
         "shareDeepLinks": {
@@ -1929,7 +1929,7 @@
         "added": "Added \"{{title}}\" to this channel",
         "alreadyInChannel": "That video is already on this channel",
         "alreadyInLibrary": "That video is already in your library",
-        "needsEditableChannel": "Tune to Ryo TV, MTV, or a custom channel to add videos from a link",
+        "needsEditableChannel": "Tune to Jay TV, MTV, or a custom channel to add videos from a link",
         "fetchFailed": "Couldn't load that YouTube video"
       },
       "delete": {
@@ -2348,7 +2348,7 @@
         },
         "shareSongs": {
           "title": "Share Songs",
-          "description": "YouTube songs share ryOS links, while Apple Music songs copy their Apple Music link"
+          "description": "YouTube songs share jayOS links, while Apple Music songs copy their Apple Music link"
         },
         "displayFullscreen": {
           "title": "Fullscreen Visuals",
@@ -2810,10 +2810,10 @@
       },
       "commands": {
         "about": "About Terminal",
-        "ai": "Enter AI chat mode with ryo",
+        "ai": "Enter AI chat mode with Jay",
         "cat": "View file contents",
         "cd": "Change directory",
-        "chat": "Chat with ryo (alias)",
+        "chat": "Chat with Jay (alias)",
         "clear": "Clear terminal screen",
         "cowsay": "A talking cow",
         "date": "Display current date/time",
@@ -2827,7 +2827,7 @@
         "pwd": "Show current directory",
         "open": "Open app, file, or applet",
         "rm": "Move file to trash",
-        "ryo": "Chat with ryo",
+        "ryo": "Chat with Jay",
         "su": "Switch or create user",
         "touch": "Create empty file",
         "vim": "Open file in vim editor",
@@ -2871,9 +2871,9 @@
         "lastLogin": "last login: {{time}}",
         "typeHelpForCommands": "type 'help' to see available commands",
         "commandNotFound": "command not found: {{cmd}}. type 'help' for a list of available commands.",
-        "askRyoAnything": "ask ryo anything. type 'exit' to return to terminal.",
-        "askRyoWithPrompt": "ask ryo anything. type 'exit' to return to terminal.\n→ from your command: {{prompt}}",
-        "chatCleared": "chat cleared. you're still chatting with ryo. type 'exit' to return to terminal.",
+        "askRyoAnything": "ask jay anything. type 'exit' to return to terminal.",
+        "askRyoWithPrompt": "ask jay anything. type 'exit' to return to terminal.\n→ from your command: {{prompt}}",
+        "chatCleared": "chat cleared. you're still chatting with jay. type 'exit' to return to terminal.",
         "isThinking": "is thinking"
       },
       "help": {
@@ -2886,8 +2886,8 @@
           "description": "Same virtual file system as Finder — edits in either app sync instantly"
         },
         "aiAssistant": {
-          "title": "Ask Ryo Inline",
-          "description": "Type \"ryo <prompt>\" (or just \"ai\") to chat with Ryo with your OS context attached"
+          "title": "Ask Jay Inline",
+          "description": "Type \"jay <prompt>\" (or just \"ai\") to chat with Jay with your OS context attached"
         },
         "fileEditing": {
           "title": "Edit & Vim",
@@ -2911,7 +2911,7 @@
         "shareApplet": "Share Applet…",
         "importFromDevice": "Import from Device…",
         "exportAs": "Export As…",
-        "ryosApp": "ryOS App",
+        "ryosApp": "jayOS App",
         "html": "HTML",
         "store": "Store",
         "openAppletStore": "Open Applet Store",
@@ -2935,7 +2935,7 @@
         },
         "createWithRyosChat": {
           "title": "Create with Chats",
-          "description": "Ask Ryo in Chats to build a custom applet — get a working HTML app instantly"
+          "description": "Ask Jay in Chats to build a custom applet — get a working HTML app instantly"
         },
         "viewApplets": {
           "title": "Run Anything",
@@ -3122,7 +3122,7 @@
         "edit": "Edit"
       },
       "password": "Password",
-      "passwordDescription": "Protect your ryOS account with a password",
+      "passwordDescription": "Protect your jayOS account with a password",
       "recoveryEmailDescription": "Add an email for password recovery",
       "recoveryEmailTitle": "Recovery Email",
       "verifyAccount": "Verify Account",
@@ -3130,9 +3130,9 @@
       "verify": "Verify",
       "manage": "Manage",
       "displayModeDescription": "Applies a color filter over the desktop wallpaper",
-      "softwareUpdateDescription": "Check whether a newer version of ryOS is available",
-      "sharingDescription": "Back up and share your ryOS data with cloud storage",
-      "dateTimeDescription": "Date and time are set by your device. ryOS uses your time zone preference for clocks, scheduling, and AI context",
+      "softwareUpdateDescription": "Check whether a newer version of jayOS is available",
+      "sharingDescription": "Back up and share your jayOS data with cloud storage",
+      "dateTimeDescription": "Date and time are set by your device. jayOS uses your time zone preference for clocks, scheduling, and AI context",
       "timeZone": "Time Zone",
       "timeZoneDescription": "Used for clocks, scheduling, formatting, and AI context",
       "timezoneAutomatic": "Auto",
@@ -3222,7 +3222,7 @@
       "chatSynth": "Chat Synth",
       "chatSynthDescription": "Typing synth preset for Chats",
       "selectAPreset": "Select a preset",
-      "loggedInToRyOS": "Signed in to ryOS",
+      "loggedInToRyOS": "Signed in to jayOS",
       "accountJoined": "Joined {{date}}",
       "connectionStatus": {
         "connected": "Connected",
@@ -3235,12 +3235,12 @@
       "changePassword": "Change Password",
       "changePasswordButton": "Change",
       "logOut": "Sign Out",
-      "logOutRowDescription": "Sign out of your ryOS account on this device",
+      "logOutRowDescription": "Sign out of your jayOS account on this device",
       "loggingOut": "Signing out…",
       "logOutOfAllDevices": "Sign Out of All Devices",
       "logOutAll": "Sign Out Everywhere…",
-      "logOutOfAllDevicesRowDescription": "Sign out of your ryOS account on every device",
-      "ryOSAccount": "ryOS Account",
+      "logOutOfAllDevicesRowDescription": "Sign out of your jayOS account on every device",
+      "jayOSAccount": "jayOS Account",
       "loginToSendMessages": "Sign in to send messages and more",
       "login": "Sign In",
       "signUp": "Sign Up",
@@ -3305,8 +3305,8 @@
       },
       "telegram": {
         "title": "Telegram",
-        "description": "Chat with Ryo in Telegram",
-        "loggedOutDescription": "Sign in to link Telegram to your ryOS account",
+        "description": "Chat with Jay in Telegram",
+        "loggedOutDescription": "Sign in to link Telegram to your jayOS account",
         "checking": "Checking Telegram link…",
         "linkedAs": "Linked as {{account}}",
         "linkPending": "Link ready - finish it in Telegram",
@@ -3331,8 +3331,8 @@
         "disconnectFailed": "Failed to disconnect Telegram",
         "loginRequired": "Sign in to link Telegram",
         "heartbeatInstructionsLabel": "Heartbeat instructions",
-        "heartbeatInstructionsDescription": "Customize what Ryo should prioritize when sending proactive Telegram check-ins.",
-        "heartbeatInstructionsPlaceholder": "Example: Focus on unfinished ryOS work, avoid generic reminders, and keep morning briefings action-oriented.",
+        "heartbeatInstructionsDescription": "Customize what Jay should prioritize when sending proactive Telegram check-ins.",
+        "heartbeatInstructionsPlaceholder": "Example: Focus on unfinished jayOS work, avoid generic reminders, and keep morning briefings action-oriented.",
         "saveInstructions": "Save",
         "savingInstructions": "Saving…",
         "resetInstructions": "Reset",
@@ -3403,7 +3403,7 @@
       "resetAllSettings": "Reset All Settings",
       "resetAllSettingsDescription": "This will clear all saved settings and restore defaults",
       "formatFileSystem": "Format File System",
-      "formatFileSystemDescription": "This will clear all files (except sample docs), images, and custom wallpapers. ryOS will restart after format",
+      "formatFileSystemDescription": "This will clear all files (except sample docs), images, and custom wallpapers. jayOS will restart after format",
       "debugMode": "Debug Mode",
       "debugModeDescription": "Turn on debugging options",
       "showResizers": "Show Resizers",
@@ -3417,18 +3417,18 @@
       "aiModelDescription": "Used in Chats, IE, and more",
       "default": "Default",
       "ttsModel": "TTS Model",
-      "ttsModelDescription": "Ryo chat only. Other apps use the system voice.",
+      "ttsModelDescription": "Jay chat only. Other apps use the system voice.",
       "openai": "OpenAI",
       "elevenlabs": "ElevenLabs",
       "ttsVoice": "TTS Voice",
       "elevenlabsVoiceId": "ElevenLabs Voice ID",
       "openaiVoice": "OpenAI Voice",
       "ttsVoices": {
-        "ryo": "Ryo",
-        "ryoV2": "Ryo v2",
-        "ryoV3": "Ryo v3",
-        "ryoInstantV4": "Ryo Instant v4",
-        "ryoPvc": "Ryo PVC",
+        "ryo": "Jay",
+        "ryoV2": "Jay v2",
+        "ryoV3": "Jay v3",
+        "ryoInstantV4": "Jay Instant v4",
+        "ryoPvc": "Jay PVC",
         "alloy": "Alloy",
         "echo": "Echo",
         "fable": "Fable",
@@ -3495,7 +3495,7 @@
         },
         "aiModel": {
           "title": "AI Model",
-          "description": "Pick which AI model powers Chats and the Terminal Ryo assistant"
+          "description": "Pick which AI model powers Chats and the Terminal Jay assistant"
         },
         "sync": {
           "title": "Cloud Sync",
@@ -3626,8 +3626,8 @@
           "description": "Drag the title bar to reposition; drag the corner to resize freely"
         },
         "ryoCanEdit": {
-          "title": "Ryo Can Edit",
-          "description": "Ask Ryo in Chats to add, move, recolor, or rewrite stickies for you"
+          "title": "Jay Can Edit",
+          "description": "Ask Jay in Chats to add, move, recolor, or rewrite stickies for you"
         },
         "clearAll": {
           "title": "Clear All",
@@ -3680,7 +3680,7 @@
         },
         "chatsCanDriveIt": {
           "title": "Chats Can Drive It",
-          "description": "Ask Ryo in Chats to pause, resume, scale, or screenshot the emulator"
+          "description": "Ask Jay in Chats to pause, resume, scale, or screenshot the emulator"
         }
       }
     },
@@ -3823,8 +3823,8 @@
           "description": "Drop in .ics files to bulk import, or export your calendar to share with others"
         },
         "ryoSchedules": {
-          "title": "Ryo Schedules It",
-          "description": "Ask Ryo in Chats to add, edit, or summarize your upcoming events for you"
+          "title": "Jay Schedules It",
+          "description": "Ask Jay in Chats to add, edit, or summarize your upcoming events for you"
         },
         "undoAutoSave": {
           "title": "Undo & Auto-Save",
@@ -3937,8 +3937,8 @@
           "description": "Auto-buckets surface birthdays, work contacts, and Telegram users"
         },
         "useWithRyo": {
-          "title": "Ask Ryo",
-          "description": "Ryo can list, create, update, and search contacts straight from Chats"
+          "title": "Ask Jay",
+          "description": "Jay can list, create, update, and search contacts straight from Chats"
         },
         "cloudSync": {
           "title": "Cloud Sync",
@@ -4477,7 +4477,7 @@
         "deleteAll": "Delete All Songs",
         "noSongs": "No songs in cache",
         "noSongsMatchFilter": "No songs match the current filter",
-        "filterByRyo": "Filter: songs created by ryo",
+        "filterByRyo": "Filter: songs created by Jay",
         "noSongsToExport": "No songs to export",
         "allSongs": "all songs",
         "importStatus": {
@@ -4709,7 +4709,7 @@
       "help": {
         "adminAccess": {
           "title": "Admin Only",
-          "description": "Locked down to the admin user (ryo) — auth-gated on every action"
+          "description": "Locked down to the admin user (jay) — auth-gated on every action"
         },
         "userManagement": {
           "title": "User Management",
@@ -4991,7 +4991,7 @@
         "copy": "Copy",
         "copied": "Copied to clipboard",
         "copyFailed": "Couldn’t copy",
-        "askRyo": "Ask Ryo",
+        "askRyo": "Ask Jay",
         "removeHighlight": "Remove Highlight",
         "askRyoQuestion": "what does this passage mean?",
         "askRyoFailed": "Couldn't get a reply. Try again later."
@@ -5092,7 +5092,7 @@
         },
         "kosync": {
           "title": "KOReader Sync",
-          "description": "Sync reading progress with KOReader on other devices. Sign in to ryOS once, then in KOReader Progress Sync set the custom server to this host’s /api/kosync URL and use your ryOS username and password (prefer filename document matching for EPUBs in /Books)."
+          "description": "Sync reading progress with KOReader on other devices. Sign in to jayOS once, then in KOReader Progress Sync set the custom server to this host’s /api/kosync URL and use your jayOS username and password (prefer filename document matching for EPUBs in /Books)."
         },
         "fonts": {
           "title": "Fonts & Layout",
@@ -5266,7 +5266,7 @@
         },
         "liveCurrency": {
           "title": "Live Currency",
-          "description": "Currency conversions fetch exchange rates through the ryOS API"
+          "description": "Currency conversions fetch exchange rates through the jayOS API"
         }
       }
     },
@@ -5397,7 +5397,7 @@
         "currency": "Currency",
         "notes": "Notes",
         "productBarcode": "Product Barcode",
-        "ryosLabel": "ryOS Label",
+        "ryosLabel": "jayOS Label",
         "thumbnail": "Thumbnail"
       },
       "detail": {
@@ -5444,8 +5444,8 @@
         "noLookupQuery": "Enter a title, brand, or barcode to look up.",
         "openedItem": "Opened {{title}}",
         "openedTag": "Filtered to {{name}}",
-        "unknownItem": "No item found for that ryOS label.",
-        "unknownTag": "No tag found for that ryOS label."
+        "unknownItem": "No item found for that jayOS label.",
+        "unknownTag": "No tag found for that jayOS label."
       },
       "sources": {
         "upcitemdb": "UPCitemdb",
@@ -5520,7 +5520,7 @@
         },
         "print": {
           "title": "Print Labels",
-          "description": "Print ryOS ID barcodes for items or tags from Print ▸ Print Item/Tag Labels. Scanning a printed label opens that item or filters by tag."
+          "description": "Print jayOS ID barcodes for items or tags from Print ▸ Print Item/Tag Labels. Scanning a printed label opens that item or filters by tag."
         }
       }
     },
@@ -6017,14 +6017,14 @@
     "toggleLabel": "Debug"
   },
   "updates": {
-    "desktopAvailable": "ryOS {{version}} for {{platform}} is available",
-    "desktopAppOffer": "ryOS is available as a {{platform}} app",
+    "desktopAvailable": "jayOS {{version}} for {{platform}} is available",
+    "desktopAppOffer": "jayOS is available as a {{platform}} app",
     "download": "Download"
   },
   "settings": {
     "language": {
       "title": "Language",
-      "description": "Select your preferred language for ryOS interface",
+      "description": "Select your preferred language for jayOS interface",
       "english": "English",
       "chineseSimplified": "简体中文",
       "chineseTraditional": "繁體中文",

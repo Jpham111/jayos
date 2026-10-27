@@ -120,14 +120,14 @@ export const DEFAULT_FAVORITES: Favorite[] = [
     isDirectory: false,
   },
   {
-    title: "Ryo",
-    url: "https://ryo.lu",
-    favicon: "https://www.google.com/s2/favicons?domain=ryo.lu&sz=32",
+    title: "Jay",
+    url: "https://jaypham.me",
+    favicon: "https://www.google.com/s2/favicons?domain=jaypham.me&sz=32",
     year: "current",
     isDirectory: false,
   },
   {
-    title: "ryOS Docs",
+    title: "jayOS Docs",
     url: "https://os.ryo.lu/docs",
     favicon: "https://www.google.com/s2/favicons?domain=os.ryo.lu&sz=32",
     year: "current",

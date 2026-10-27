@@ -553,7 +553,7 @@ export function useChatsAppController({
     ? currentRoom.type === "private"
       ? getPrivateRoomDisplayName(currentRoom, username)
       : `#${currentRoom.name}`
-    : "@ryo";
+    : "@jay";
 
   return {
     translatedHelpItems,

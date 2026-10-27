@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exponent</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',sans-serif;background:#0a0a0a;color:#d4d4d4;line-height:1.75;-webkit-font-smoothing:antialiased}
+.container{max-width:680px;margin:0 auto;padding:48px 24px 96px}
+h1{font-size:28px;font-weight:700;color:#fff;margin-bottom:4px;letter-spacing:-0.5px}
+.meta{font-size:13px;color:#666;margin-bottom:32px;line-height:1.6}
+h2{font-size:20px;font-weight:600;color:#fff;margin-top:48px;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid #1a1a1a}
+h3{font-size:16px;font-weight:600;color:#e0e0e0;margin-top:28px;margin-bottom:10px}
+p{margin-bottom:16px;font-size:15px}
+ul,ol{margin:12px 0 16px;padding-left:22px}
+li{margin-bottom:6px;font-size:15px}
+strong{color:#fff}
+em{color:#999}
+hr{border:none;border-top:1px solid #1a1a1a;margin:36px 0}
+.results{background:#111;border:1px solid #1a1a1a;border-radius:10px;padding:20px 24px;margin:20px 0}
+.results li{color:#7dd3fc}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:24px}
+.tag{background:#1a1a2e;color:#818cf8;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:500}
+.nda-note{background:#1a1520;border:1px solid #2d1f3d;border-radius:8px;padding:14px 18px;margin-bottom:32px;color:#c4b5fd;font-size:13px}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Exponent</h1>
+<div class="meta">
+<strong>Role:</strong> UX Research Intern → Product Designer (Contract)<br>
+<strong>Timeline:</strong> September – December 2023<br>
+<strong>Team:</strong> Research, Design, Engineering
+</div>
+<div class="tags">
+<span class="tag">UX Research</span>
+<span class="tag">Interaction Design</span>
+<span class="tag">Design Systems</span>
+</div>
+<div class="nda-note">Product details are under NDA. Specifics are generalized; annotated screens available on request under NDA.</div>
+
+<h2>In One Line</h2>
+<p>I was brought on to prove that users couldn't <em>understand</em> a pre-launch AI wearable. The research showed the opposite — they understood it fine; they didn't feel in <em>control</em> of it. I reframed the problem, translated a vague feeling into a concrete interaction spec, and turned that spec into a system-level fix that held across every screen instead of the few we tested.</p>
+
+<h2>Results</h2>
+<div class="results">
+<ul>
+<li>The dominant complaint — cognitive overwhelm — stopped surfacing as a primary theme when the same usability protocol was re-run after the overhaul</li>
+<li>The fix shipped at the token and component level, so restraint became the system default rather than a per-screen patch</li>
+<li>Research-to-design latency dropped from a ~2-week synthesis hand-off to insight-to-iteration inside a single sprint</li>
+<li>Pain-point maps were adopted directly into the design team's working files</li>
+<li>Promoted from research intern to contract product designer on the strength of the contribution</li>
+</ul>
+</div>
+
+<h2>The Reframe</h2>
+<p>The brief I inherited carried an assumption: users were struggling with <em>feature comprehension</em> — too much to learn, too many things to figure out. The implied fix was education — tooltips, onboarding, progressive teaching.</p>
+<p>That's not what the sessions showed. Participants could explain what features did. They could complete tasks. What they couldn't do was <em>predict</em> the interface. AI-driven elements updated on their own, surfaced proactively, and changed multiple regions of the screen at once. The language was strikingly consistent across participants: <em>overwhelmed</em>, <em>distracted</em>, <em>like it's doing too much</em>, <em>like I'm not driving</em>.</p>
+<p>That's not a comprehension problem. It's a <strong>control</strong> problem — and the two have opposite fixes. Teaching someone more about a system that already feels out of their hands makes the feeling worse, not better.</p>
+
+<h2>Research Process</h2>
+<h3>Facilitating for Behavior, Not Agreement</h3>
+<p>I ran usability sessions across multiple participant cohorts with one discipline above all: don't rescue the participant, and don't confirm the team's prior. I let people struggle, stayed quiet through the awkward pauses, and captured behavioral observations — hesitations, backtracks, the moment a hand lifted off the device — timestamped to the specific task step.</p>
+<h3>Auditing the Data Before Trusting It</h3>
+<p>Before any of it could drive a decision, I audited the session logs and participant records and found inconsistencies that would have poisoned anything built on top of them. I cleaned the data, flagged the gaps explicitly, and only then let the findings move forward.</p>
+<h3>Synthesis That Exposes Pattern, Not Anecdote</h3>
+<p>I clustered behavioral observations, verbatim quotes, and survey responses by theme rather than by participant using affinity mapping. The output was annotated flows marking exact failure moments, pain-point maps with severity ratings, and reports built to be scannable in a 30-second design review.</p>
+
+<h2>From Sentiment to Spec</h2>
+<p>This was the core analytical work. I decomposed "overwhelmed" into the observable interface behaviors that were producing it. Across the annotated sessions, the perception of lost control consistently traced back to three mechanisms:</p>
+<ul>
+<li><strong>Simultaneity</strong> — multiple regions of the screen updated at the same time, so there was no single place to look and no stable anchor to return to</li>
+<li><strong>Unpredictability</strong> — the interface acted without a user-initiated trigger, and gave no signal <em>before</em> it acted, so changes felt like they came from nowhere</li>
+<li><strong>Irreversibility</strong> — once a proactive behavior fired, there was no obvious way to dismiss it or get back to the prior state</li>
+</ul>
+<p>Framed that way, the felt experience of "I'm not in control" becomes a function of <em>simultaneity × unpredictability × irreversibility</em> — and every one of those is a design lever.</p>
+
+<h2>The Design Response</h2>
+<h3>Against Simultaneity: One Thing Moves at a Time</h3>
+<p>AI-initiated updates were sequenced into a single active focus zone and choreographed so only one region animated at once. The interface had to <em>earn</em> attention rather than demand it everywhere by default.</p>
+<h3>Against Unpredictability: Telegraph Before Acting</h3>
+<p>Proactive behaviors got a brief, legible pre-state — a signal that something was about to happen and why it was surfacing — instead of appearing fully formed.</p>
+<h3>Against Irreversibility: Every Proactive Action Is Interruptible</h3>
+<p>If the system could act on its own, the user had to be able to see it, stop it, and undo it. Reversibility was treated as a precondition for proactivity.</p>
+<h3>Why It Shipped as a System, Not a Set of Screens</h3>
+<p>All of this landed at the token and component level: a defined notion of "proactivity level," distinct component states for AI-initiated vs. user-initiated changes, and motion rules baked into the system. Had I patched only the screens we happened to test, the overwhelm would have regrown on every new screen the team built after I left.</p>
+
+<h2>The Hard Call</h2>
+<p>There was real pressure — from the product side and from the calendar — to do the opposite of restraint. A pre-launch AI product wants its intelligence to be <em>visible</em>: more proactive surfacing, more "look what it can do," because that's what demos well to stakeholders.</p>
+<p>I argued against both. The behavior that made the product impressive in a 90-second demo was the same behavior that was costing trust in daily use — proactivity that reads as magic on first contact reads as <em>noise</em> by day three. I pushed for fewer, quieter, more legible AI behaviors implemented as system rules, even though it was the slower and less flashy path.</p>
+
+<h2>Closing the Loop</h2>
+<p>I partnered with research and engineering to restructure how session data was captured, cleaned, and reported, so a finding could become a tested design response inside the same sprint instead of arriving as a synthesis doc a fortnight late.</p>
+<p>The measure was deliberately the same instrument as the diagnosis: re-run the original usability protocol after the overhaul and watch whether cognitive overwhelm still surfaced as a primary theme. It didn't.</p>
+
+<h2>Reflection</h2>
+<p><strong>What I'd do differently:</strong> I'd instrument the outcome quantitatively from the start — a perceived-control or task-confidence rating captured every session — so the before/after was a number, not a disappearance of a theme.</p>
+<p><strong>What I took from it:</strong> AI interfaces break an assumption most UI patterns are built on: the interface isn't only responding to the user, it's <em>anticipating</em> them — and anticipation that the user can't predict or stop reads as lost control, no matter how smart it is. Restraint has to be the default, and proactivity has to be earned, telegraphed, and reversible.</p>
+</div>
+</body>
+</html>

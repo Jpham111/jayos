@@ -2,7 +2,7 @@
 
 import { createClientLogger } from "@/utils/logger";
 
-export const DB_NAME = "ryOS";
+export const DB_NAME = "jayOS";
 /** Bump when adding/removing object stores or changing upgrade logic. */
 export const DB_VERSION = 18;
 let hasLoggedOpenSuccess = false;

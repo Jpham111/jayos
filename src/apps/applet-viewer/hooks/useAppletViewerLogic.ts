@@ -811,7 +811,15 @@ export function useAppletViewerLogic({
   };
 
   const ensureMacFonts = (content: string): string => {
-    if (!isMacTheme || !content) return content;
+    if (!content) return content;
+    // Rewrite root-relative URLs (src="/...", href="/...") to absolute so they
+    // resolve correctly inside srcDoc iframes (whose URL is about:srcdoc).
+    const origin = window.location.origin;
+    content = content.replace(
+      /((?:src|href|poster|action)\s*=\s*["'])\/(?!\/)/gi,
+      `$1${origin}/`
+    );
+    if (!isMacTheme) return content;
     const preload = `<link rel="stylesheet" href="/fonts/fonts.css">`;
     const fontStyle = `<style data-ryos-applet-font-fix>
       html,body{font-family:"LucidaGrande","Lucida Grande",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"Apple Color Emoji","Noto Color Emoji",sans-serif!important}

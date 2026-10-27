@@ -1,7 +1,7 @@
 {
-  "name": "ryOS",
-  "short_name": "ryOS",
-  "description": "An AI OS experience, made with Cursor",
+  "name": "jayOS",
+  "short_name": "jayOS",
+  "description": "Jay Pham — Product Designer",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",

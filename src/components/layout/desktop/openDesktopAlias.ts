@@ -1,6 +1,7 @@
 import type { AppId } from "@/config/appRegistry";
 import type { LaunchOriginRect } from "@/stores/useAppStore";
 import type { FileSystemItem } from "@/stores/useFilesStore";
+import { ensureFileContentLoaded } from "@/stores/useFilesStore";
 import { STORES, dbOperations } from "@/utils/indexedDB";
 import { getDefaultFileApp } from "@/utils/fileAssociations";
 import { getStoreForFile } from "@/utils/indexedDBOperations";
@@ -68,6 +69,9 @@ export async function openDesktopAlias(
     const storeName = getStoreForFile(targetFile.path, targetFile);
     if (storeName) {
       if (targetFile.uuid) {
+        // Trigger lazy load for asset-backed files (e.g. applets with assetPath)
+        await ensureFileContentLoaded(targetFile.path, targetFile.uuid);
+
         const contentData = await dbOperations.get<{
           name: string;
           content: string | Blob;

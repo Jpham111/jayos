@@ -333,7 +333,7 @@ export interface ChatsStoreState {
   }) => Promise<{ ok: boolean; error?: string }>; // Permanently delete account
 }
 
-const GREETING_FALLBACK = "👋 hey! i'm ryo. ask me anything!";
+const GREETING_FALLBACK = "👋 hey! i'm jay. ask me anything!";
 
 const getInitialAiMessage = (): AIChatMessage => ({
   id: "1",

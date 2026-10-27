@@ -61,7 +61,7 @@ const toDisplayMessage = (
   msg: AIChatMessage,
   username: string | null
 ): DisplayMessage => {
-  const displayUsername = msg.role === "user" ? username || "You" : "Ryo";
+  const displayUsername = msg.role === "user" ? username || "You" : "Jay";
   const cached = displayMessageCache.get(msg);
   if (cached && cached.username === displayUsername) {
     return cached.display;

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music Mirror</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',sans-serif;background:#0a0a0a;color:#d4d4d4;line-height:1.75;-webkit-font-smoothing:antialiased}
+.container{max-width:680px;margin:0 auto;padding:48px 24px 96px}
+video{width:100%;border-radius:12px;margin-bottom:40px;background:#111}
+h1{font-size:28px;font-weight:700;color:#fff;margin-bottom:4px;letter-spacing:-0.5px}
+.meta{font-size:13px;color:#666;margin-bottom:32px;line-height:1.6}
+h2{font-size:20px;font-weight:600;color:#fff;margin-top:48px;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid #1a1a1a}
+h3{font-size:16px;font-weight:600;color:#e0e0e0;margin-top:28px;margin-bottom:10px}
+p{margin-bottom:16px;font-size:15px}
+img{width:100%;border-radius:8px;margin:24px 0}
+ul,ol{margin:12px 0 16px;padding-left:22px}
+li{margin-bottom:6px;font-size:15px}
+strong{color:#fff}
+em{color:#999}
+hr{border:none;border-top:1px solid #1a1a1a;margin:36px 0}
+.results{background:#111;border:1px solid #1a1a1a;border-radius:10px;padding:20px 24px;margin:20px 0}
+.results li{color:#7dd3fc}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:24px}
+.tag{background:#1a1a2e;color:#818cf8;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:500}
+</style>
+</head>
+<body>
+<div class="container">
+<video autoplay muted loop playsinline src="/assets/videos/portfolio/music-mirror-demo.mp4"></video>
+
+<h1>Music Mirror</h1>
+<div class="meta">
+<strong>Project:</strong> Music Mirror<br>
+<strong>Timeline:</strong> 24 hours (College Hackathon)<br>
+<strong>Role:</strong> Lead Designer<br>
+<strong>Team:</strong> 4 members — Designer, 2 Developers, 1 Product Manager
+</div>
+<div class="tags">
+<span class="tag">Hackathon</span>
+<span class="tag">Cross-Platform</span>
+<span class="tag">Rapid Prototyping</span>
+</div>
+
+<h2>The Problem</h2>
+<p>Music lovers using multiple streaming platforms couldn't easily transfer their curated playlists between services. Manual recreation was time-consuming and often resulted in lost playlists when switching platforms.</p>
+
+<h2>The Solution</h2>
+<p>Built Music Mirror — a web tool that seamlessly transfers playlists between Spotify, Apple Music, SoundCloud, and YouTube TV with a clean, minimal interface focused on speed and trust.</p>
+
+<h2>Impact</h2>
+<div class="results">
+<ul>
+<li>Working prototype delivered in 24 hours</li>
+<li>4 platform integrations with real-time syncing</li>
+<li>Judge recognition for both functionality and user experience</li>
+<li>Standout project among all hackathon submissions</li>
+</ul>
+</div>
+
+<h2>Initial Observations</h2>
+<h3>Problem Identified</h3>
+<ul>
+<li>Students frequently used multiple music platforms but couldn't move playlists</li>
+<li>Manual playlist recreation took hours and was error-prone</li>
+<li>Existing tools were complex and didn't prioritize user experience</li>
+<li>Platform lock-in prevented users from exploring new services</li>
+</ul>
+<h3>Key Insight</h3>
+<p>Users needed a trustworthy, fast, and simple solution that could handle valuable playlist data without complexity.</p>
+
+<h2>Research (Under Hackathon Constraints)</h2>
+<p>Quick competitive analysis (2 hours):</p>
+<ul>
+<li><strong>TuneMyMusic:</strong> Complex interface, limited free transfers</li>
+<li><strong>Soundiiz:</strong> Feature-heavy, overwhelming for simple transfers</li>
+<li><strong>Manual methods:</strong> Extremely time-consuming copy-paste processes</li>
+</ul>
+<p>Quick surveys with 10 college students about platform usage. Key insights:</p>
+<ul>
+<li>Speed was critical — users wanted fast transfers</li>
+<li>Trust essential — handling personal playlist data required transparency</li>
+<li>Simplicity over features — basic functionality more valuable than complexity</li>
+<li>Error handling crucial — users needed confidence nothing would break</li>
+</ul>
+<img src="/assets/images/portfolio/music-mirror-task.jpg" alt="User Task Analysis">
+
+<h2>Design Principles</h2>
+<ul>
+<li><strong>Speed first</strong> — Minimize steps and wait times</li>
+<li><strong>Trust through transparency</strong> — Clear data access communication</li>
+<li><strong>Minimal UI</strong> — Focus on core functionality only</li>
+<li><strong>Error prevention</strong> — Robust API failure handling</li>
+</ul>
+<h3>Rapid Design Process</h3>
+<ul>
+<li>Hours 1–3: Wireframes and user flow</li>
+<li>Hours 4–12: High-fidelity designs while devs built APIs</li>
+<li>Hours 13–20: Real-time adjustments based on technical constraints</li>
+<li>Hours 21–24: Polish and testing</li>
+</ul>
+<img src="/assets/images/portfolio/music-mirror-wireframe.jpg" alt="Wireframe Designs">
+
+<h2>Final Designs</h2>
+<p>Core experience:</p>
+<ul>
+<li>Clean landing page explaining the tool's purpose</li>
+<li>Platform selection — visual icons for all 4 streaming services</li>
+<li>Streamlined authentication — OAuth flow for each platform</li>
+<li>Transfer interface — side-by-side source/destination with progress tracking</li>
+<li>Success confirmation — clear indication of completed transfers</li>
+</ul>
+<img src="/assets/images/portfolio/music-mirror-process.jpg" alt="Design Process & Iterations">
+
+<h2>Reflection</h2>
+<p><strong>What worked under pressure:</strong></p>
+<ul>
+<li>Clear design principles guided all rapid decisions</li>
+<li>Parallel workflows — designed while developers built APIs</li>
+<li>Focus on core experience — avoided feature creep</li>
+<li>Real-time iteration — quick design adjustments as constraints emerged</li>
+</ul>
+<p><strong>Personal growth:</strong></p>
+<ul>
+<li>High-pressure design — learned to make quick, confident decisions</li>
+<li>Technical collaboration — improved developer communication under deadlines</li>
+<li>Constraint-driven thinking — understanding what's truly essential</li>
+</ul>
+</div>
+</body>
+</html>

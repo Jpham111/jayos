@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color.me</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',sans-serif;background:#0a0a0a;color:#d4d4d4;line-height:1.75;-webkit-font-smoothing:antialiased}
+.container{max-width:680px;margin:0 auto;padding:48px 24px 96px}
+video{width:100%;border-radius:12px;margin-bottom:40px;background:#111}
+h1{font-size:28px;font-weight:700;color:#fff;margin-bottom:4px;letter-spacing:-0.5px}
+.meta{font-size:13px;color:#666;margin-bottom:32px;line-height:1.6}
+h2{font-size:20px;font-weight:600;color:#fff;margin-top:48px;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid #1a1a1a}
+h3{font-size:16px;font-weight:600;color:#e0e0e0;margin-top:28px;margin-bottom:10px}
+p{margin-bottom:16px;font-size:15px}
+img{width:100%;border-radius:8px;margin:24px 0}
+ul,ol{margin:12px 0 16px;padding-left:22px}
+li{margin-bottom:6px;font-size:15px}
+strong{color:#fff}
+em{color:#999}
+hr{border:none;border-top:1px solid #1a1a1a;margin:36px 0}
+.results{background:#111;border:1px solid #1a1a1a;border-radius:10px;padding:20px 24px;margin:20px 0}
+.results li{color:#7dd3fc}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:24px}
+.tag{background:#1a1a2e;color:#818cf8;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:500}
+</style>
+</head>
+<body>
+<div class="container">
+<video autoplay muted loop playsinline src="/assets/videos/portfolio/color-me-demo.mp4"></video>
+
+<h1>Color.me</h1>
+<div class="meta">
+<strong>Role:</strong> Product Designer &amp; Developer<br>
+<strong>Timeline:</strong> January – April 2024 (4 months)<br>
+<strong>Team:</strong> Solo, with design community feedback
+</div>
+<div class="tags">
+<span class="tag">Solo Build</span>
+<span class="tag">Tool Design</span>
+<span class="tag">Design Systems</span>
+</div>
+
+<h2>The Problem</h2>
+<p>I was using four different tools to pick colors for a single project. Adobe Color for harmony rules, Coolors for quick generation, a separate contrast checker for accessibility, and Figma for actually testing how things looked together. The switching friction was constant and the mental overhead was real.</p>
+<p>I built Color.me because the tool I wanted didn't exist: one interface that combines color theory, generation, and accessibility checking without making me context-switch.</p>
+
+<h2>Impact</h2>
+<div class="results">
+<ul>
+<li>My own style guide setup time: ~45 min → under 20 min, self-tracked across 3 projects</li>
+<li>~200 weekly active users in the first 2 months post-launch</li>
+<li>8-minute average session time, 65% 7-day return rate (first 60 days)</li>
+<li>3 design agencies added it to their workflow after beta — reached out unprompted</li>
+<li>4.3/5 average rating from 34 survey responses shared in design community Slack</li>
+</ul>
+</div>
+
+<h2>What Shaped the Design</h2>
+<p>I documented my own color workflow for two months before writing a line of code. I also interviewed 8 designers and surveyed 45 more. A few things were consistent:</p>
+<ul>
+<li>Color theory knowledge varied widely, but even experienced designers struggled to apply theory to actual UI contexts</li>
+<li>The inspiration-to-application gap was real — palettes that look beautiful in isolation often fall apart on a button or a background</li>
+<li>Accessibility was almost always an afterthought, checked at the end rather than factored in during selection</li>
+<li>Speed mattered more than power. Designers wanted to make a good color decision in 5 minutes, not 45.</li>
+</ul>
+
+<h3>The Cut That Made It Better</h3>
+<p>The first version had palette history and export presets. I removed both. During testing, designers kept asking "how do I undo this?" — not because anything was broken, but because too many persistent states were creating cognitive overhead. Removing history made the tool feel like a sketchpad instead of a document. Session time went up after that cut, not down.</p>
+<img src="/assets/images/portfolio/color.me-user-journey.jpg" alt="User Journey Map">
+
+<h2>Competitor Research</h2>
+<ul>
+<li><strong>Adobe Color:</strong> Comprehensive but complex, part of expensive suite</li>
+<li><strong>Coolors.co:</strong> Popular but lacks color theory foundation</li>
+<li><strong>Paletton:</strong> Theory-based but outdated interface</li>
+<li><strong>Khroma:</strong> AI-powered but limited customization</li>
+</ul>
+<p>The gap: No tool effectively combines color theory with practical palette generation while maintaining a clean, focused interface.</p>
+<img src="/assets/images/portfolio/Color.me-matrix.jpg" alt="Competitor Research Matrix">
+
+<h2>How I Designed It</h2>
+<h3>Single-Screen Workflow</h3>
+<p>Generator, picker, palette, and contrast ratios all visible at once. No tabs, no mode-switching, no "export and open in another tool."</p>
+<h3>Theory-Informed Generation</h3>
+<p>The harmony type selector — monochromatic, triadic, complementary — drives palette generation. Users make better decisions when the tool gives them a framework, not just random options.</p>
+<h3>Accessibility Integrated, Not Bolted On</h3>
+<p>Contrast ratios appear automatically under each generated color. You don't have to remember to check — it's already there.</p>
+<h3>Mood Control</h3>
+<p>A light/dark toggle that affects saturation and brightness gives users a fast lever for shifting the emotional direction of a palette without requiring an understanding of HSL math.</p>
+
+<h2>Reflection</h2>
+<p><strong>What I'd do differently:</strong> Mobile was an afterthought. A lot of designers do quick exploration on their phones — I didn't design for that until after launch. I'd also explore a Figma plugin version as a v2 priority.</p>
+<p><strong>What I took from this:</strong> Removing features improved the product. The palette history feature had taken real effort to build. Cutting it was the right call, and the metrics backed it up. That experience sharpened how I evaluate scope on every project since.</p>
+</div>
+</body>
+</html>

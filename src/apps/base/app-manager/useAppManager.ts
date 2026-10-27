@@ -206,7 +206,11 @@ export function useAppManager({ apps }: AppManagerProps) {
     }
 
     const resetUrl = () => {
-      window.history.replaceState({}, "", "/");
+      try {
+        window.history.replaceState({}, "", "/");
+      } catch {
+        // Silently ignore in srcdoc iframes where replaceState is invalid
+      }
     };
 
     if (routeAction.kind === "cleanup") {

@@ -184,7 +184,7 @@ export function ChatsWindowContent({ c, isForeground }: ChatsWindowContentProps)
                         ? currentRoom.type === "private"
                           ? getPrivateRoomDisplayName(currentRoom, username)
                           : `#${currentRoom.name}`
-                        : "@ryo"}
+                        : "@jay"}
                     </h2>
                     <CaretDown
                       className="size-2.5 transform transition-transform duration-200 text-neutral-400 group-data-[state=open]:rotate-180"
@@ -203,7 +203,7 @@ export function ChatsWindowContent({ c, isForeground }: ChatsWindowContentProps)
                       ? currentRoom.type === "private"
                         ? getPrivateRoomDisplayName(currentRoom, username)
                         : `#${currentRoom.name}`
-                      : "@ryo"}
+                      : "@jay"}
                   </h2>
                   <CaretDown
                     className="size-2.5 transform transition-transform duration-200 text-neutral-400"

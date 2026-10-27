@@ -24,6 +24,14 @@
       "status": "active"
     },
     {
+      "path": "/Documents/Case Studies",
+      "name": "Case Studies",
+      "isDirectory": true,
+      "type": "directory",
+      "icon": "/icons/default/documents.png",
+      "status": "active"
+    },
+    {
       "path": "/Downloads",
       "name": "Downloads",
       "isDirectory": true,
@@ -34,6 +42,14 @@
     {
       "path": "/Images",
       "name": "Images",
+      "isDirectory": true,
+      "type": "directory",
+      "icon": "/icons/default/images.png",
+      "status": "active"
+    },
+    {
+      "path": "/Images/Portfolio",
+      "name": "Portfolio",
       "isDirectory": true,
       "type": "directory",
       "icon": "/icons/default/images.png",
@@ -98,22 +114,76 @@
   ],
   "files": [
     {
-      "path": "/Documents/README.md",
-      "name": "README.md",
+      "path": "/Documents/About Jay.md",
+      "name": "About Jay.md",
       "isDirectory": false,
       "type": "markdown",
       "icon": "/icons/default/file-text.png",
       "status": "active",
-      "content": "# ryOS — A Web-Based Agentic AI OS, made with Cursor\n\nA modern web-based desktop environment inspired by classic macOS and Windows, built with React, TypeScript, and AI. Features multiple built-in applications, a familiar desktop interface, and a system-aware AI assistant. Works on all devices—desktop, tablet, and mobile.\n\n## Features\n\n### Desktop Environment\n- Authentic macOS and Windows-style desktop interactions\n- Multi-instance window manager with drag, resize, and minimize\n- Customizable wallpapers (photos, patterns, or videos)\n- System-wide sound effects and AI assistant (Ryo)\n- Virtual file system with local storage persistence and backup/restore\n\n### Themes\n- **System 7** — Classic Mac OS look with top menubar and traffic-light controls\n- **Aqua** — Mac OS X style with modern aesthetics\n- **Windows XP** — Bottom taskbar, Start menu, and classic window controls\n- **Windows 98** — Retro Windows experience with mobile-safe controls\n\n### Built-in Applications\n- **Finder** — File manager with Quick Access, storage info, and smart file detection\n- **TextEdit** — Rich text editor with markdown, slash commands, and multi-window support\n- **MacPaint** — Bitmap graphics editor with drawing tools, patterns, and import/export\n- **Videos** — VCR-style YouTube player with playlist management\n- **Soundboard** — Record and play custom sounds with waveform visualization\n- **Synth** — Virtual synthesizer with multiple waveforms, effects, and MIDI support\n- **Photo Booth** — Camera app with real-time filters and photo gallery\n- **Internet Explorer** — Time Machine that explores web history via Wayback Machine; AI generates sites for years before 1996 or in the future\n- **Chats** — AI chat with Ryo, public/private chat rooms, voice messages, and tool calling\n- **Control Panels** — System preferences: appearance, sounds, backup/restore, and file system management\n- **Minesweeper** — Classic puzzle game\n- **Virtual PC** — DOS emulator for classic games (Doom, SimCity, etc.)\n- **Terminal** — Unix-like CLI with AI integration (`ryo <prompt>`)\n- **iPod** — 1st-gen iPod music player with YouTube import, lyrics, and translation\n- **Applet Store** — Browse, install, and share community-created HTML applets\n\n## Quick Start\n1. Launch apps from the Finder, Desktop, or Apple/Start menu\n2. Drag windows to move, drag edges to resize\n3. Use Control Panels to customize appearance and sounds\n4. Chat with Ryo AI for help or to control apps\n5. Files auto-save to browser storage\n\nVisit https://github.com/ryokun6/ryos for more information."
+      "content": "# Jay Pham\n\n## Product Designer\n\nI'm a product designer passionate about creating intuitive, user-centered digital experiences. I work at the intersection of design systems, TypeScript/React, and AI tooling — where design decisions and engineering decisions are the same decision.\n\nOutside of work, you'll usually find me surfing.\n\nOpen to freelance and full-time opportunities.\n\n## Skills\n\nProduct Design, UX Research, UI Design, Prototyping, Design Systems, TypeScript/React, Accessibility, Performance, User Testing, Stakeholder Management\n\n## Contact\n\n- Email: jay.pham25@gmail.com\n\n## About This Site\n\nThis portfolio is built as a retro Mac OS X desktop experience. Explore the apps, open the project folders, or just vibe with the iPod."
     },
     {
-      "path": "/Documents/Quick Tips.md",
-      "name": "Quick Tips.md",
+      "path": "/Documents/Case Studies/Exponent.md",
+      "name": "Exponent.md",
       "isDirectory": false,
       "type": "markdown",
       "icon": "/icons/default/file-text.png",
       "status": "active",
-      "content": "# Quick Tips\n\n## Getting Started\n- Launch apps from Finder, Desktop, or Apple/Start menu\n- Multiple apps can run simultaneously with multi-window support\n- Drag windows to move, drag edges to resize, minimize to dock\n- Use Control Panels to customize appearance, sounds, and AI settings\n- Drag apps from Finder to Desktop to create shortcuts\n\n## Finder\n- Browse Documents, Applications, Images, Applets, and Trash\n- Sort by name, kind, size, or date modified\n- Icon and list view options with Quick Access sidebar\n- View storage info and file sizes\n- Move files to Trash and empty when needed\n\n## TextEdit\n- Rich text editing with markdown support\n- Format: bold, italic, underline, lists, headings\n- Slash commands (/) for quick formatting and AI assistance\n- Multi-window support for multiple documents\n- Auto-saves your work to Documents folder\n\n## MacPaint\n- Drawing tools: pencil, brush, spray, eraser, fill\n- Shape tools: rectangle, oval, line, polygon\n- Pattern fills and custom colors\n- Selection, move, copy, paste, and undo/redo\n- Import images and export your creations\n\n## Soundboard\n- Record sounds from microphone with waveform preview\n- Play with clicks or number keys (1-9)\n- Customize with emojis and titles\n- Import/export soundboards as JSON\n\n## Synth\n- Play with on-screen keyboard or computer keys (A-L row)\n- Waveforms: sine, square, sawtooth, triangle, noise\n- Effects: reverb, delay, distortion, filter\n- MIDI keyboard support\n- Save and load custom presets\n\n## Photo Booth\n- Take photos with webcam\n- Real-time filters: sepia, noir, thermal, x-ray, etc.\n- Multi-photo burst mode (4 photos)\n- Photos saved to gallery strip\n\n## Control Panels\n- Change wallpapers (photos, patterns, videos, or custom uploads)\n- Toggle UI sounds, typing synth, and terminal sounds\n- Configure AI model and voice settings\n- Backup and restore all settings and files\n- Format or reset file system\n\n## Internet Explorer\n- Time travel through web history with Wayback Machine\n- AI generates sites for years before 1996 or in the future\n- View archived snapshots by clicking the clock icon\n- Save favorites organized by year\n\n## Chats with Ryo\n- Chat with Ryo AI assistant for help or to control apps\n- Ryo can create applets, edit documents, search the store\n- Join public chat rooms (mention @ryo for AI responses)\n- Push-to-talk voice messages (hold Space)\n- Send 👋 nudge for context-aware tips\n- Ryo becomes a DJ when music is playing in iPod\n\n## Videos\n- VCR-style YouTube player with retro aesthetics\n- Playlist management with shuffle and repeat\n- LCD display with scrolling titles\n- Share videos with shareable links\n\n## Virtual PC\n- DOS emulator for classic games\n- Play Doom, SimCity, Prince of Persia, and more\n- Save and load game states\n- Toggle CRT scanline effects\n\n## Terminal\n- Unix-like commands: ls, cd, cat, mkdir, touch, rm, vim\n- Arrow keys for command history navigation\n- Tab completion for files and commands\n- `ryo <prompt>` to chat with AI directly\n- `open <app>` to launch apps by name\n\n## iPod\n- Import YouTube URLs to build your music library\n- Classic click-wheel navigation and controls\n- Shuffle, repeat, and cover flow modes\n- Time-synced lyrics with translation to any language\n- Gesture controls for fine-tuning lyric timing\n- Fullscreen lyrics view with background video\n- Share tracks with shareable links\n\n## Applet Store\n- Browse and install community-created HTML applets\n- One-click install and automatic updates\n- Create and share your own applets\n- Applets run in sandboxed environment"
+      "content": "# Exponent — Designing Restraint into an AI Interface\n\n**Role:** UX Research Intern → Product Designer (Contract)\n**Timeline:** September – December 2023\n**Team:** Research, Design, Engineering\n**Type:** UX Research · Interaction Design · Design Systems\n\n*Product details are under NDA. Specifics are generalized; annotated screens available on request under NDA.*\n\n---\n\n## In One Line\n\nI was brought on to prove that users couldn't *understand* a pre-launch AI wearable. The research showed the opposite — they understood it fine; they didn't feel in *control* of it. I reframed the problem, translated a vague feeling into a concrete interaction spec, and turned that spec into a system-level fix that held across every screen instead of the few we tested.\n\n## Results\n\n- The dominant complaint — cognitive overwhelm — stopped surfacing as a primary theme when the same usability protocol was re-run after the overhaul\n- The fix shipped at the token and component level, so restraint became the system default rather than a per-screen patch\n- Research-to-design latency dropped from a ~2-week synthesis hand-off to insight-to-iteration inside a single sprint\n- Pain-point maps were adopted directly into the design team's working files — pulled into Figma annotations rather than filed in a deck\n- Promoted from research intern to contract product designer on the strength of the contribution\n\n---\n\n## The Reframe\n\nThe brief I inherited carried an assumption: users were struggling with *feature comprehension* — too much to learn, too many things to figure out. The implied fix was education — tooltips, onboarding, progressive teaching.\n\nThat's not what the sessions showed. Participants could explain what features did. They could complete tasks. What they couldn't do was *predict* the interface. AI-driven elements updated on their own, surfaced proactively, and changed multiple regions of the screen at once. The language was strikingly consistent across participants: *overwhelmed*, *distracted*, *like it's doing too much*, *like I'm not driving*.\n\nThat's not a comprehension problem. It's a **control** problem — and the two have opposite fixes. Teaching someone more about a system that already feels out of their hands makes the feeling worse, not better.\n\n---\n\n## Research Process\n\n### Facilitating for Behavior, Not Agreement\n\nI ran usability sessions across multiple participant cohorts with one discipline above all: don't rescue the participant, and don't confirm the team's prior. I let people struggle, stayed quiet through the awkward pauses, and captured behavioral observations — hesitations, backtracks, the moment a hand lifted off the device — timestamped to the specific task step.\n\n### Auditing the Data Before Trusting It\n\nBefore any of it could drive a decision, I audited the session logs and participant records and found inconsistencies that would have poisoned anything built on top of them. I cleaned the data, flagged the gaps explicitly, and only then let the findings move forward.\n\n### Synthesis That Exposes Pattern, Not Anecdote\n\nI clustered behavioral observations, verbatim quotes, and survey responses by theme rather than by participant using affinity mapping. Organizing by theme is what turned \"three people mentioned this\" into \"this is a structural pattern at a specific interaction point.\" The output was annotated flows marking exact failure moments, pain-point maps with severity ratings, and reports built to be scannable in a 30-second design review.\n\n---\n\n## From Sentiment to Spec\n\nThis was the core analytical work. I decomposed \"overwhelmed\" into the observable interface behaviors that were producing it. Across the annotated sessions, the perception of lost control consistently traced back to three mechanisms:\n\n- **Simultaneity** — multiple regions of the screen updated at the same time, so there was no single place to look and no stable anchor to return to\n- **Unpredictability** — the interface acted without a user-initiated trigger, and gave no signal *before* it acted, so changes felt like they came from nowhere\n- **Irreversibility** — once a proactive behavior fired, there was no obvious way to dismiss it or get back to the prior state\n\nFramed that way, the felt experience of \"I'm not in control\" becomes a function of *simultaneity × unpredictability × irreversibility* — and every one of those is a design lever.\n\n---\n\n## The Design Response\n\n### Against Simultaneity: One Thing Moves at a Time\n\nAI-initiated updates were sequenced into a single active focus zone and choreographed so only one region animated at once. The interface had to *earn* attention rather than demand it everywhere by default.\n\n### Against Unpredictability: Telegraph Before Acting\n\nProactive behaviors got a brief, legible pre-state — a signal that something was about to happen and why it was surfacing — instead of appearing fully formed.\n\n### Against Irreversibility: Every Proactive Action Is Interruptible\n\nIf the system could act on its own, the user had to be able to see it, stop it, and undo it. Reversibility was treated as a precondition for proactivity.\n\n### Why It Shipped as a System, Not a Set of Screens\n\nAll of this landed at the token and component level: a defined notion of \"proactivity level,\" distinct component states for AI-initiated vs. user-initiated changes, and motion rules baked into the system. Had I patched only the screens we happened to test, the overwhelm would have regrown on every new screen the team built after I left.\n\n---\n\n## The Hard Call\n\nThere was real pressure — from the product side and from the calendar — to do the opposite of restraint. A pre-launch AI product wants its intelligence to be *visible*: more proactive surfacing, more \"look what it can do,\" because that's what demos well to stakeholders.\n\nI argued against both. The behavior that made the product impressive in a 90-second demo was the same behavior that was costing trust in daily use — proactivity that reads as magic on first contact reads as *noise* by day three. I pushed for fewer, quieter, more legible AI behaviors implemented as system rules, even though it was the slower and less flashy path.\n\n---\n\n## Closing the Loop\n\nI partnered with research and engineering to restructure how session data was captured, cleaned, and reported, so a finding could become a tested design response inside the same sprint instead of arriving as a synthesis doc a fortnight late.\n\nThe measure was deliberately the same instrument as the diagnosis: re-run the original usability protocol after the overhaul and watch whether cognitive overwhelm still surfaced as a primary theme. It didn't.\n\n---\n\n## Reflection\n\n**What I'd do differently:** I'd instrument the outcome quantitatively from the start — a perceived-control or task-confidence rating captured every session — so the before/after was a number, not a disappearance of a theme.\n\n**What I took from it:** AI interfaces break an assumption most UI patterns are built on: the interface isn't only responding to the user, it's *anticipating* them — and anticipation that the user can't predict or stop reads as lost control, no matter how smart it is. Restraint has to be the default, and proactivity has to be earned, telegraphed, and reversible."
+    },
+    {
+      "path": "/Documents/Case Studies/Stellar Ads.md",
+      "name": "Stellar Ads.md",
+      "isDirectory": false,
+      "type": "markdown",
+      "icon": "/icons/default/file-text.png",
+      "status": "active",
+      "content": "# Stellar Ads — 0→1 CRM for Local Businesses\n\n**Role:** Lead Product Designer\n**Timeline:** April 2025 – Present\n**Team:** Designer (me), 2 Engineers, Product Manager\n**Type:** 0→1 Product Design · UX Research · Design Systems\n\n---\n\n## The Problem\n\nLocal business owners were running their operations across spreadsheets, sticky notes, and a patchwork of disconnected tools. Booking an appointment and tracking whether that client ever came back required manual effort that owners — who were also the ones cutting hair, training clients, and managing staff — simply didn't have time for.\n\nExisting CRMs weren't built for them. Salesforce costs $150/month and requires a consultant to set up. Square handles booking but stops there. Zoho is generic by design. None of them started from the reality of running a salon or a gym.\n\n## Impact\n\n- Booking time dropped from ~20 min to under 4 min per appointment — timed across 8 beta users\n- 12 of 15 beta businesses actively tracking client follow-ups for the first time\n- 8 of 9 users self-configured custom fields with zero guidance in their first week\n- ~2 hours/day estimated time savings based on pre-launch time-diary interviews\n- 4.7/5 average satisfaction across 23 beta businesses\n- ~40% increase in repeat booking rate across 6 tracked accounts over 3 months\n\n---\n\n## What I Found in Research\n\nI interviewed 15 local business owners and surveyed 80 more. But the thing that actually changed the product wasn't a survey — it was a Tuesday morning I spent shadowing a salon owner.\n\nShe never opened the contacts view. Not once. She worked entirely from her daily schedule: who's coming in, when, what they need. The contact database was something she'd look at later — if at all.\n\nThat single observation flipped the information architecture. The booking calendar became the home screen. The contact dashboard got demoted. The product got simpler and more useful at the same time.\n\nOther things that stuck from research:\n\n- 68% of owners surveyed were still using spreadsheets for customer management\n- Every industry had meaningfully different data needs — salons track color formulas and allergies, gyms track fitness goals and injury history, clinics track prescriptions\n- Client retention was the pain point owners mentioned most after booking\n\n![User Journey Map](/assets/images/portfolio/stellar-user-journey.jpg)\n\n---\n\n## Competitor Analysis\n\n- **Salesforce**: Powerful but expensive, requires consultants\n- **HubSpot**: Marketing-focused, weak on operations\n- **Square**: Good booking, limited CRM features\n- **Zoho**: Affordable but generic\n\nKey gap: No CRM prioritizes booking as the core surface. Customization requires developers. Retention tools are afterthoughts.\n\n![Competitor Analysis Matrix](/assets/images/portfolio/stellar-competitor-matrix.png)\n\n---\n\n## How I Designed It\n\n### Booking-First Architecture\n\nThe calendar is the home screen. One-click scheduling, automated reminders, client history accessible without leaving the booking view.\n\n### No-Code Customization\n\nA drag-and-drop field builder that lets owners add any data point — text, date, dropdown, file upload — and organize fields into sections. Industry templates give them a starting point. In testing, 7 of 8 owners used a template rather than a blank setup. 8 of 9 added at least one custom field without being prompted.\n\n### Retention by Design\n\nAutomated follow-up workflows and inactive client alerts built into the core product — not an add-on.\n\n### Progressive Disclosure\n\nStart simple, get value on day one. More powerful features are there when owners are ready — not in their face on first launch.\n\n### A Call I'm Glad I Made\n\nI pushed back on adding a customizable dashboard with drag-and-drop widgets. The team wanted it. But the real problem wasn't that users wanted more control over their layout — it was that they didn't know what to look at first. An opinionated layout with strong visual hierarchy solved the actual problem.\n\n![Information Architecture](/assets/images/portfolio/information-architecture-stellar.jpg)\n\n---\n\n## Final Designs\n\n![Design Iterations](/assets/images/portfolio/Stellar-Design-iterations.jpg)\n\nIndustry customization examples:\n- **Salon**: Hair color formulas, allergies, preferred stylist\n- **Gym**: Fitness goals, injury history, membership tier\n- **Clinic**: Medical history, insurance info, prescriptions\n\n---\n\n## Reflection\n\n**Real business impact:**\n- **Maria's Salon**: Booking per appointment dropped from ~20 min to under 4 min; manually re-engaged 15 lapsed clients using retention alerts\n- **FitCore Studio**: New member drop-off in the first month fell from roughly 1 in 3 to under 1 in 8\n\n**What I'd do differently:** I'd test across more industries earlier. The first two months were heavily salon-focused, which shaped assumptions I had to undo later.\n\n**What I took from this:** Building 0→1 is mostly about sequencing decisions. Which pain point earns trust fastest? What can we defer without hurting the core experience? The booking-first call shaped everything downstream."
+    },
+    {
+      "path": "/Documents/Case Studies/National Research Group.md",
+      "name": "National Research Group.md",
+      "isDirectory": false,
+      "type": "markdown",
+      "icon": "/icons/default/file-text.png",
+      "status": "active",
+      "content": "# National Research Group — Internal SEO Tool Redesign\n\n**Role:** Product Designer\n**Timeline:** Feb 2024 – Apr 2025\n**Team:** 5-person cross-functional team\n**Type:** B2B SaaS · Data Tools · Interaction Design · Accessibility\n\n---\n\n## The Problem\n\nNRG's internal SEO tools had a usability problem that was costing more than time. Researchers and analysts were submitting malformed data — not because they were careless, but because the interface gave them no feedback until it was too late. Invalid inputs would pass through, corrupt downstream datasets, and create hours of cleanup work.\n\nThe bigger issue: it was a recurring problem. That meant it wasn't a user training issue — it was a design issue.\n\n## Impact\n\n- Daily active usage up ~65% in the 3 months after redesign\n- Users completed standard analysis tasks ~50% faster on average (moderated usability sessions, n=8)\n- First report creation time dropped from ~47 min to under 15 min\n- 9 of 10 usability participants rated navigation \"intuitive\" or \"very intuitive\"\n- 4.6/5 average satisfaction (post-launch internal survey, n=31)\n- 85% monthly active mobile usage in the first quarter after launch\n\n---\n\n## What I Found\n\nI started with a usability audit of the existing input flows — specifically the validation patterns, error states, and inline microcopy. What I found was a system that was functionally complete but interaction-design empty. Fields accepted bad data silently. Errors appeared only after submission. The feedback loop was broken.\n\n### The Decision I Pushed For\n\nThe team pushed hard for a customizable dashboard — drag-and-drop charts, user-configurable layouts. I pushed back for weeks. The real problem wasn't that users wanted more control over their view; it was that they didn't know what to look at when they first arrived. A fixed, opinionated layout with strong visual hierarchy solved the \"where do I start?\" problem that customization would have buried. We shipped without drag-and-drop. Nobody asked for it after launch.\n\n### The Mobile Pivot\n\nThe 40% mobile access rate that surfaced mid-project forced a significant pivot. Policy researchers are frequently in meetings, reviewing data on phones, making decisions away from a desk. Mobile wasn't a nice-to-have — it was a use case the tool was actively failing.\n\n---\n\n## Market Research\n\n- **Tableau**: Powerful but requires training most analysts don't have time for\n- **Google Analytics**: Too technical for policy-focused workflows\n- **Custom dashboards**: Expensive and slow to iterate\n\nThe gap: tools built for analysts, not for the researchers and policy makers who actually needed to act on the data.\n\n---\n\n## How I Designed It\n\n### Rebuilt Input Validation from the Component Level Up\n\nInline validation that fires on blur, not on submit. Field-level error states that tell users exactly what went wrong and why — not generic \"invalid input\" messages.\n\n### Redesigned for Accessibility\n\nSemantic structure, proper ARIA labeling, color contrast meeting WCAG AA. Accessibility wasn't retrofitted — it was part of the component spec from the first wireframe.\n\n### Fixed the Information Hierarchy\n\nAn opinionated dashboard layout with clear visual priority replaced the cluttered everything-at-once model.\n\n### Mobile-First from the Pivot Onward\n\nResponsive layouts, touch-friendly tap targets, a schedule view optimized for small screens.\n\nI also ran A/B tests on CTA copy, button placement, and funnel microcopy across different campaign types.\n\n![Information Architecture](/assets/images/portfolio/information-architecture-nrg.jpeg)\n\n---\n\n## Final Designs\n\n![A/B Test Results](/assets/images/portfolio/ab-test-nrg.jpg)\n\n![Revenue Growth & ROI Dashboard](/assets/images/portfolio/nrg-revenue-growth-roi.jpg)\n\n![Customer Segment Value Dashboard](/assets/images/portfolio/nrg-customer-segment-value.jpg)\n\n---\n\n## Reflection\n\n**What I'd do differently:** I should have gotten to the mobile data earlier. The 40% mobile access rate was in the analytics the whole time — we just weren't looking at it as a design signal until mid-project.\n\n**What I took from this:** The recurring data corruption problem looked like a user error problem from the outside. It was actually a feedback timing problem — the interface was telling users too late that something was wrong. Framing it that way changed what we designed: not better error messages, but earlier ones."
+    },
+    {
+      "path": "/Documents/Case Studies/Scope XY-7.md",
+      "name": "Scope XY-7.md",
+      "isDirectory": false,
+      "type": "markdown",
+      "icon": "/icons/default/file-text.png",
+      "status": "active",
+      "content": "# Scope XY-7 — Real-Time Lissajous Oscilloscope\n\n**Role:** Designer & Developer\n**Timeline:** May 2025 (2 weeks)\n**Team:** Solo\n**Type:** Native macOS App · Real-Time Graphics · Audio Engineering\n\n---\n\n## What It Does\n\nScope XY-7 is a macOS menubar app that captures system audio and renders it as a real-time Lissajous (XY) or waveform display. It simulates the look of an analog CRT oscilloscope — phosphor persistence, bloom glow, vignette darkening — all running at 60fps in a borderless floating window.\n\nNo virtual audio drivers. No kernel extensions. Just ScreenCaptureKit piping system audio through a lock-free ring buffer into a Core Graphics offscreen renderer.\n\n## Key Features\n\n- XY (Lissajous) and waveform display modes\n- Adjustable phosphor persistence and gain\n- 4 phosphor colors: green, amber, white, orange\n- CRT bloom glow via downscale/upscale compositing\n- Light and dark mode\n- PNG snapshot and MP4 video recording\n- Floating borderless window with dynamic dock icon\n- Auto-relaunch permission flow for new users\n\n---\n\n## Why Build This\n\nI wanted to see what music looks like. Lissajous figures — where left audio maps to X and right maps to Y — turn stereo separation, phase relationships, and frequency ratios into visual geometry. A mono signal is a diagonal line. A pure stereo sine wave is a circle. Real music produces constantly evolving organic shapes.\n\nExisting tools were either expensive hardware, Windows-only, or web apps that couldn't capture system audio without browser hacks. macOS had no native option that was lightweight, beautiful, and just worked from the menubar.\n\n---\n\n## Architecture\n\nThe app has four layers, each running on its own thread or context:\n\n- **Audio Capture** — ScreenCaptureKit SCStream on a high-priority GCD queue, extracting interleaved float samples from CMSampleBuffer\n- **Ring Buffer** — 2048-sample circular buffer with NSLock. Snapshots are copied in-place so the renderer never blocks the audio thread\n- **Renderer** — Core Graphics offscreen CGContext. Persistence is achieved by partially clearing the buffer each frame (filling with background color at low alpha). Grid and vignette are cached as CGImages\n- **Display** — NSView driven by CADisplayLink at 60fps. The view reads directly from the ring buffer snapshot — no main thread dispatch for audio data\n\nThis separation means the audio callback never touches the main thread, the renderer never allocates, and SwiftUI controls stay responsive even during heavy rendering.\n\n---\n\n## Rendering Pipeline\n\nEach frame follows this sequence:\n\n1. **Fade** — Fill the persistence buffer with the background color at (1 - persistence) alpha. This creates the phosphor decay trail.\n2. **Trace** — Draw the audio path as two strokes: a wide dim outer (4px, 25% alpha) for phosphor spread, then a sharp bright core (1.5px, 100%) on top\n3. **Bloom** — Downscale the trace buffer to 25%, then draw it back at full size. Bilinear upscaling acts as a free Gaussian blur, creating the CRT glow\n4. **Grid** — Composite the cached grid overlay (8×8 divisions, center crosshair, diagonal guides in XY mode)\n5. **Vignette** — Composite the cached radial gradient for edge darkening\n\nThe trace is downsampled to ~512 points per frame (from 2048 in the ring buffer) for performance.\n\n---\n\n## Design Decisions\n\n### Teenage Engineering Language\n\nThe UI uses 9px monospaced type, 1px borders, flat controls with no shadows, and #FF6600 orange as the only accent color. This creates a tool aesthetic — the interface disappears and the visualization is the product.\n\n### Borderless Floating Window\n\nA popover felt too disposable for something you want to keep visible while working. A full window felt too heavy for a utility. The floating panel splits the difference: always on top, draggable, resizable, but no title bar chrome.\n\n### Permission Flow\n\nScreenCaptureKit requires Screen Recording permission, which is confusing for an audio-only app. The onboarding screen explains this upfront, auto-detects when permission is granted, and relaunches the app automatically.\n\n---\n\n## Challenges\n\n### Main Thread Starvation\n\nThe first version dispatched 4096 float samples to the main thread on every audio callback (~86 times per second). This choked SwiftUI and made buttons unresponsive. The fix: store snapshots directly in the ring buffer and have the renderer read them on its own schedule.\n\n### TCC Permission Loop\n\nDuring development, Xcode re-signs the binary on every build, which invalidates the Screen Recording permission grant. Solution for development: sign with a stable team identity. For users: the auto-relaunch flow handles the one-time grant seamlessly.\n\n### CVDisplayLink Deprecation\n\nThe original frame timer used CVDisplayLink, which Apple deprecated. Migrated to CADisplayLink, but the macOS API differs from iOS — you create it via the NSView instance method, not the class initializer.\n\n---\n\n## Reflection\n\nThis was my first native macOS app and my first time working with real-time audio and offscreen rendering. The biggest lesson: performance problems are architecture problems. Moving data between threads is where frame budgets die, not in the rendering math itself.\n\nThe Teenage Engineering design constraint was freeing — with only one accent color and monospaced type, every decision was about information density and visual hierarchy rather than aesthetic choices.\n\nNext: signed notarized distribution via DMG, Sparkle auto-updates, and an FFT spectrum mode."
+    },
+    {
+      "path": "/Documents/Case Studies/Color.me.md",
+      "name": "Color.me.md",
+      "isDirectory": false,
+      "type": "markdown",
+      "icon": "/icons/default/file-text.png",
+      "status": "active",
+      "content": "# Color.me — Color Harmony Generator\n\n**Role:** Product Designer & Developer\n**Timeline:** January – April 2024 (4 months)\n**Team:** Solo, with design community feedback\n**Type:** Solo Build · Tool Design · Design Systems\n\n---\n\n## The Problem\n\nI was using four different tools to pick colors for a single project. Adobe Color for harmony rules, Coolors for quick generation, a separate contrast checker for accessibility, and Figma for actually testing how things looked together. The switching friction was constant and the mental overhead was real.\n\nI built Color.me because the tool I wanted didn't exist: one interface that combines color theory, generation, and accessibility checking without making me context-switch.\n\n## Impact\n\n- My own style guide setup time: ~45 min → under 20 min, self-tracked across 3 projects\n- ~200 weekly active users in the first 2 months post-launch\n- 8-minute average session time, 65% 7-day return rate (first 60 days)\n- 3 design agencies added it to their workflow after beta — reached out unprompted\n- 4.3/5 average rating from 34 survey responses shared in design community Slack\n\n---\n\n## What Shaped the Design\n\nI documented my own color workflow for two months before writing a line of code. I also interviewed 8 designers and surveyed 45 more. A few things were consistent:\n\n- Color theory knowledge varied widely, but even experienced designers struggled to apply theory to actual UI contexts\n- The inspiration-to-application gap was real — palettes that look beautiful in isolation often fall apart on a button or a background\n- Accessibility was almost always an afterthought, checked at the end rather than factored in during selection\n- Speed mattered more than power. Designers wanted to make a good color decision in 5 minutes, not 45.\n\n### The Cut That Made It Better\n\nThe first version had palette history and export presets. I removed both. During testing, designers kept asking \"how do I undo this?\" — not because anything was broken, but because too many persistent states were creating cognitive overhead. Removing history made the tool feel like a sketchpad instead of a document. Session time went up after that cut, not down.\n\n![User Journey Map](/assets/images/portfolio/color.me-user-journey.jpg)\n\n---\n\n## Competitor Research\n\n- **Adobe Color**: Comprehensive but complex, part of expensive suite\n- **Coolors.co**: Popular but lacks color theory foundation\n- **Paletton**: Theory-based but outdated interface\n- **Khroma**: AI-powered but limited customization\n\nThe gap: No tool effectively combines color theory with practical palette generation while maintaining a clean, focused interface.\n\n![Competitor Research Matrix](/assets/images/portfolio/Color.me-matrix.jpg)\n\n---\n\n## How I Designed It\n\n### Single-Screen Workflow\n\nGenerator, picker, palette, and contrast ratios all visible at once. No tabs, no mode-switching, no \"export and open in another tool.\"\n\n### Theory-Informed Generation\n\nThe harmony type selector — monochromatic, triadic, complementary — drives palette generation. Users make better decisions when the tool gives them a framework, not just random options.\n\n### Accessibility Integrated, Not Bolted On\n\nContrast ratios appear automatically under each generated color. You don't have to remember to check — it's already there.\n\n### Mood Control\n\nA light/dark toggle that affects saturation and brightness gives users a fast lever for shifting the emotional direction of a palette without requiring an understanding of HSL math.\n\n---\n\n## Reflection\n\n**What I'd do differently:** Mobile was an afterthought. A lot of designers do quick exploration on their phones — I didn't design for that until after launch. I'd also explore a Figma plugin version as a v2 priority.\n\n**What I took from this:** Removing features improved the product. The palette history feature had taken real effort to build. Cutting it was the right call, and the metrics backed it up. That experience sharpened how I evaluate scope on every project since."
+    },
+    {
+      "path": "/Documents/Case Studies/friend.radio.md",
+      "name": "friend.radio.md",
+      "isDirectory": false,
+      "type": "markdown",
+      "icon": "/icons/default/file-text.png",
+      "status": "active",
+      "content": "# friend.radio — Daily Music Sharing App\n\n**Role:** Product Designer & Full-Stack Developer\n**Timeline:** August – November 2024 (4 months)\n**Stack:** Figma, Supabase, Firestore, Vercel\n**Type:** Consumer · Solo Build · Constraint-Driven Design\n\n---\n\n## The Problem\n\nMy friend group was stuck in music discovery fatigue. Spotify's algorithm had learned our taste so well it stopped surprising us. We'd recommend songs to each other in group chats and they'd get buried in three messages. No one was discovering anything new, and the recommendations from people whose taste I actually trusted were getting lost.\n\nThe problem wasn't a lack of music. It was a lack of a shared place to put it that everyone would actually check.\n\n## Impact\n\n- All 12 users checked the app daily within the first 2 weeks — zero onboarding, 100% adoption\n- Still active at 3 months — no drop-off after novelty wore off\n- Morning check-ins became a routine; the group started referencing app discoveries in conversation\n- ~60% more new artists added to personal libraries, self-reported by 8 of 12 users at the 6-week mark\n- Zero support requests — the app never needed explanation\n\n---\n\n## What Shaped the Design\n\nI observed how my friends actually shared music before I designed anything. The pattern was consistent: someone would hear something they wanted to share, open a group chat, paste a link, and add \"listen to this.\" Then it'd get buried.\n\nThe behavior I wanted to preserve: one deliberate recommendation, from someone you trust, that feels worth checking. The behavior I wanted to eliminate: recommendations disappearing into feed noise.\n\nFrom there, the constraints almost wrote themselves:\n\n- **One song per day.** Forces curation. Nobody shares throwaway picks when they only get one slot. In testing, unlimited sharing immediately made the list feel like a feed.\n- **24-hour reset.** Creates just enough urgency to build a daily habit without feeling like homework.\n- **Platform agnostic.** Spotify, Apple Music, SoundCloud, YouTube — paste any URL.\n\n---\n\n## How I Designed It\n\n### One Song Per Day\n\nForces curation. Nobody shares throwaway picks when they only get one slot.\n\n### 24-Hour Reset\n\nCreates just enough urgency to build a daily habit without feeling like homework. Weekly reset didn't drive the same consistency in a 3-week trial.\n\n### Platform Agnostic via URL Paste\n\nI had Spotify, Apple Music, and SoundCloud API auth flows half-written before I stopped. I was solving a discovery problem nobody actually had. My friends already knew what they wanted to share — the friction wasn't finding the song, it was that there was no shared place to post it. I killed the in-app search in week 3. The URL paste field became the entire submission experience. 11 of 12 users preferred it.\n\n---\n\n## Design Process\n\n![Design Process Step 1](/assets/images/portfolio/design-process-1.jpg)\n\n![Design Process Step 2](/assets/images/portfolio/design-process-2.jpg)\n\n![Design Process Step 3](/assets/images/portfolio/design-process-3.jpg)\n\n![Design Process Step 4](/assets/images/portfolio/design-process-4.jpg)\n\n---\n\n## Reflection\n\n**What I'd do differently:** The design is intentionally minimal, but a few things users kept asking for have merit: song previews so you can hear a snippet before clicking through, and album artwork to give the daily list more visual pull. Neither would add complexity — they'd add warmth.\n\n**What I took from this:** Killing the search feature was the most important product decision I made on this project. I had real engineering work invested in it. The feature worked. But it was solving a problem that didn't exist in the actual use case. Shipping a URL paste field instead of an in-app search saved weeks of development and made the product better."
+    },
+    {
+      "path": "/Documents/Case Studies/Music Mirror.md",
+      "name": "Music Mirror.md",
+      "isDirectory": false,
+      "type": "markdown",
+      "icon": "/icons/default/file-text.png",
+      "status": "active",
+      "content": "# Music Mirror — Cross-Platform Playlist Transfer Tool\n\n**Project:** Music Mirror\n**Timeline:** 24 hours (College Hackathon)\n**Role:** Lead Designer\n**Team:** 4 members — Designer, 2 Developers, 1 Product Manager\n\n---\n\n## The Problem\n\nMusic lovers using multiple streaming platforms couldn't easily transfer their curated playlists between services. Manual recreation was time-consuming and often resulted in lost playlists when switching platforms.\n\n## The Solution\n\nBuilt Music Mirror — a web tool that seamlessly transfers playlists between Spotify, Apple Music, SoundCloud, and YouTube TV with a clean, minimal interface focused on speed and trust.\n\n## Impact\n\n- Working prototype delivered in 24 hours\n- 4 platform integrations with real-time syncing\n- Judge recognition for both functionality and user experience\n- Standout project among all hackathon submissions\n\n---\n\n## Initial Observations\n\n### Problem Identified\n\n- Students frequently used multiple music platforms but couldn't move playlists\n- Manual playlist recreation took hours and was error-prone\n- Existing tools were complex and didn't prioritize user experience\n- Platform lock-in prevented users from exploring new services\n\n### Hackathon Constraints\n\n- 24-hour deadline for fully functional prototype\n- Multiple API integrations required\n- No time for extensive user research\n- Extreme time pressure on design decisions\n\n### Key Insight\n\nUsers needed a trustworthy, fast, and simple solution that could handle valuable playlist data without complexity.\n\n---\n\n## Research (Under Hackathon Constraints)\n\nQuick competitive analysis (2 hours):\n\n- **TuneMyMusic**: Complex interface, limited free transfers\n- **Soundiiz**: Feature-heavy, overwhelming for simple transfers\n- **Manual methods**: Extremely time-consuming copy-paste processes\n\nQuick surveys with 10 college students about platform usage. Key insights:\n\n- Speed was critical — users wanted fast transfers\n- Trust essential — handling personal playlist data required transparency\n- Simplicity over features — basic functionality more valuable than complexity\n- Error handling crucial — users needed confidence nothing would break\n\n![User Task Analysis](/assets/images/portfolio/music-mirror-task.jpg)\n\n---\n\n## Design Principles\n\n- **Speed first** — Minimize steps and wait times\n- **Trust through transparency** — Clear data access communication\n- **Minimal UI** — Focus on core functionality only\n- **Error prevention** — Robust API failure handling\n\n### Key Design Decisions\n\n- Two-panel layout — source left, destination right with clear transfer flow\n- Minimal steps — authenticate, select playlist, transfer\n- Real-time feedback — progress indicators and status updates\n- Trust elements — clear permission requests and transfer confirmation\n\n### Rapid Design Process\n\n- Hours 1–3: Wireframes and user flow\n- Hours 4–12: High-fidelity designs while devs built APIs\n- Hours 13–20: Real-time adjustments based on technical constraints\n- Hours 21–24: Polish and testing\n\n![Wireframe Designs](/assets/images/portfolio/music-mirror-wireframe.jpg)\n\n---\n\n## Final Designs\n\nCore experience:\n\n- Clean landing page explaining the tool's purpose\n- Platform selection — visual icons for all 4 streaming services\n- Streamlined authentication — OAuth flow for each platform\n- Transfer interface — side-by-side source/destination with progress tracking\n- Success confirmation — clear indication of completed transfers\n\nKey features delivered:\n\n- Cross-platform support — Spotify, Apple Music, SoundCloud, YouTube TV\n- Real-time syncing — live progress updates during transfers\n- Error handling — graceful failures with helpful explanations\n- Responsive design — works on desktop and mobile\n\n![Design Process & Iterations](/assets/images/portfolio/music-mirror-process.jpg)\n\n---\n\n## Reflection\n\n**What worked under pressure:**\n- Clear design principles guided all rapid decisions\n- Parallel workflows — designed while developers built APIs\n- Focus on core experience — avoided feature creep\n- Real-time iteration — quick design adjustments as constraints emerged\n\n**Hackathon learnings:**\n- Simplicity wins under pressure — complex designs would have failed\n- Trust signals crucial — even prototypes need user confidence\n- MVP mentality essential — core experience over comprehensive features\n- Real-time collaboration — constant design/development communication\n\n**Personal growth:**\n- High-pressure design — learned to make quick, confident decisions\n- Technical collaboration — improved developer communication under deadlines\n- Constraint-driven thinking — understanding what's truly essential"
     },
     {
       "path": "/Books/Meditations - Marcus Aurelius.epub",
@@ -142,6 +212,328 @@
       "icon": "/icons/default/image.png",
       "status": "active",
       "assetPath": "/assets/images/susan-kare.png"
+    },
+    {
+      "path": "/Images/Portfolio/stellar-user-journey.jpg",
+      "name": "stellar-user-journey.jpg",
+      "isDirectory": false,
+      "type": "jpg",
+      "icon": "/icons/default/image.png",
+      "status": "active",
+      "assetPath": "/assets/images/portfolio/stellar-user-journey.jpg"
+    },
+    {
+      "path": "/Images/Portfolio/stellar-competitor-matrix.png",
+      "name": "stellar-competitor-matrix.png",
+      "isDirectory": false,
+      "type": "png",
+      "icon": "/icons/default/image.png",
+      "status": "active",
+      "assetPath": "/assets/images/portfolio/stellar-competitor-matrix.png"
+    },
+    {
+      "path": "/Images/Portfolio/information-architecture-stellar.jpg",
+      "name": "information-architecture-stellar.jpg",
+      "isDirectory": false,
+      "type": "jpg",
+      "icon": "/icons/default/image.png",
+      "status": "active",
+      "assetPath": "/assets/images/portfolio/information-architecture-stellar.jpg"
+    },
+    {
+      "path": "/Images/Portfolio/Stellar-Design-iterations.jpg",
+      "name": "Stellar-Design-iterations.jpg",
+      "isDirectory": false,
+      "type": "jpg",
+      "icon": "/icons/default/image.png",
+      "status": "active",
+      "assetPath": "/assets/images/portfolio/Stellar-Design-iterations.jpg"
+    },
+    {
+      "path": "/Images/Portfolio/information-architecture-nrg.jpeg",
+      "name": "information-architecture-nrg.jpeg",
+      "isDirectory": false,
+      "type": "jpeg",
+      "icon": "/icons/default/image.png",
+      "status": "active",
+      "assetPath": "/assets/images/portfolio/information-architecture-nrg.jpeg"
+    },
+    {
+      "path": "/Images/Portfolio/ab-test-nrg.jpg",
+      "name": "ab-test-nrg.jpg",
+      "isDirectory": false,
+      "type": "jpg",
+      "icon": "/icons/default/image.png",
+      "status": "active",
+      "assetPath": "/assets/images/portfolio/ab-test-nrg.jpg"
+    },
+    {
+      "path": "/Images/Portfolio/nrg-revenue-growth-roi.jpg",
+      "name": "nrg-revenue-growth-roi.jpg",
+      "isDirectory": false,
+      "type": "jpg",
+      "icon": "/icons/default/image.png",
+      "status": "active",
+      "assetPath": "/assets/images/portfolio/nrg-revenue-growth-roi.jpg"
+    },
+    {
+      "path": "/Images/Portfolio/nrg-customer-segment-value.jpg",
+      "name": "nrg-customer-segment-value.jpg",
+      "isDirectory": false,
+      "type": "jpg",
+      "icon": "/icons/default/image.png",
+      "status": "active",
+      "assetPath": "/assets/images/portfolio/nrg-customer-segment-value.jpg"
+    },
+    {
+      "path": "/Images/Portfolio/nrg-logo.jpg",
+      "name": "nrg-logo.jpg",
+      "isDirectory": false,
+      "type": "jpg",
+      "icon": "/icons/default/image.png",
+      "status": "active",
+      "assetPath": "/assets/images/portfolio/nrg-logo.jpg"
+    },
+    {
+      "path": "/Images/Portfolio/color.me-user-journey.jpg",
+      "name": "color.me-user-journey.jpg",
+      "isDirectory": false,
+      "type": "jpg",
+      "icon": "/icons/default/image.png",
+      "status": "active",
+      "assetPath": "/assets/images/portfolio/color.me-user-journey.jpg"
+    },
+    {
+      "path": "/Images/Portfolio/Color.me-matrix.jpg",
+      "name": "Color.me-matrix.jpg",
+      "isDirectory": false,
+      "type": "jpg",
+      "icon": "/icons/default/image.png",
+      "status": "active",
+      "assetPath": "/assets/images/portfolio/Color.me-matrix.jpg"
+    },
+    {
+      "path": "/Images/Portfolio/design-process-1.jpg",
+      "name": "design-process-1.jpg",
+      "isDirectory": false,
+      "type": "jpg",
+      "icon": "/icons/default/image.png",
+      "status": "active",
+      "assetPath": "/assets/images/portfolio/design-process-1.jpg"
+    },
+    {
+      "path": "/Images/Portfolio/design-process-2.jpg",
+      "name": "design-process-2.jpg",
+      "isDirectory": false,
+      "type": "jpg",
+      "icon": "/icons/default/image.png",
+      "status": "active",
+      "assetPath": "/assets/images/portfolio/design-process-2.jpg"
+    },
+    {
+      "path": "/Images/Portfolio/design-process-3.jpg",
+      "name": "design-process-3.jpg",
+      "isDirectory": false,
+      "type": "jpg",
+      "icon": "/icons/default/image.png",
+      "status": "active",
+      "assetPath": "/assets/images/portfolio/design-process-3.jpg"
+    },
+    {
+      "path": "/Images/Portfolio/design-process-4.jpg",
+      "name": "design-process-4.jpg",
+      "isDirectory": false,
+      "type": "jpg",
+      "icon": "/icons/default/image.png",
+      "status": "active",
+      "assetPath": "/assets/images/portfolio/design-process-4.jpg"
+    },
+    {
+      "path": "/Images/Portfolio/music-mirror-task.jpg",
+      "name": "music-mirror-task.jpg",
+      "isDirectory": false,
+      "type": "jpg",
+      "icon": "/icons/default/image.png",
+      "status": "active",
+      "assetPath": "/assets/images/portfolio/music-mirror-task.jpg"
+    },
+    {
+      "path": "/Images/Portfolio/music-mirror-wireframe.jpg",
+      "name": "music-mirror-wireframe.jpg",
+      "isDirectory": false,
+      "type": "jpg",
+      "icon": "/icons/default/image.png",
+      "status": "active",
+      "assetPath": "/assets/images/portfolio/music-mirror-wireframe.jpg"
+    },
+    {
+      "path": "/Images/Portfolio/music-mirror-process.jpg",
+      "name": "music-mirror-process.jpg",
+      "isDirectory": false,
+      "type": "jpg",
+      "icon": "/icons/default/image.png",
+      "status": "active",
+      "assetPath": "/assets/images/portfolio/music-mirror-process.jpg"
+    },
+    {
+      "path": "/Applets/Stellar Ads.app",
+      "name": "Stellar Ads.app",
+      "isDirectory": false,
+      "type": "html",
+      "icon": "/icons/default/file-text.png",
+      "status": "active",
+      "createdBy": "ryo",
+      "assetPath": "/assets/applets/case-studies/stellar-ads.htm"
+    },
+    {
+      "path": "/Applets/Scope XY-7.app",
+      "name": "Scope XY-7.app",
+      "isDirectory": false,
+      "type": "html",
+      "icon": "/icons/default/file-text.png",
+      "status": "active",
+      "createdBy": "ryo",
+      "assetPath": "/assets/applets/case-studies/scope-xy7.htm"
+    },
+    {
+      "path": "/Applets/Color.me.app",
+      "name": "Color.me.app",
+      "isDirectory": false,
+      "type": "html",
+      "icon": "/icons/default/file-text.png",
+      "status": "active",
+      "createdBy": "ryo",
+      "assetPath": "/assets/applets/case-studies/color-me.htm"
+    },
+    {
+      "path": "/Applets/friend.radio.app",
+      "name": "friend.radio.app",
+      "isDirectory": false,
+      "type": "html",
+      "icon": "/icons/default/file-text.png",
+      "status": "active",
+      "createdBy": "ryo",
+      "assetPath": "/assets/applets/case-studies/friend-radio.htm"
+    },
+    {
+      "path": "/Applets/Music Mirror.app",
+      "name": "Music Mirror.app",
+      "isDirectory": false,
+      "type": "html",
+      "icon": "/icons/default/file-text.png",
+      "status": "active",
+      "createdBy": "ryo",
+      "assetPath": "/assets/applets/case-studies/music-mirror.htm"
+    },
+    {
+      "path": "/Applets/Exponent.app",
+      "name": "Exponent.app",
+      "isDirectory": false,
+      "type": "html",
+      "icon": "/icons/default/file-text.png",
+      "status": "active",
+      "createdBy": "ryo",
+      "assetPath": "/assets/applets/case-studies/exponent.htm"
+    },
+    {
+      "path": "/Applets/National Research Group.app",
+      "name": "National Research Group.app",
+      "isDirectory": false,
+      "type": "html",
+      "icon": "/icons/default/file-text.png",
+      "status": "active",
+      "createdBy": "ryo",
+      "assetPath": "/assets/applets/case-studies/nrg.htm"
+    },
+    {
+      "path": "/Desktop/Stellar Ads",
+      "name": "Stellar Ads",
+      "isDirectory": false,
+      "type": "alias",
+      "icon": "/icons/default/file-text.png",
+      "status": "active",
+      "aliasType": "file",
+      "aliasTarget": "/Applets/Stellar Ads.app"
+    },
+    {
+      "path": "/Desktop/Scope XY-7",
+      "name": "Scope XY-7",
+      "isDirectory": false,
+      "type": "alias",
+      "icon": "/icons/default/file-text.png",
+      "status": "active",
+      "aliasType": "file",
+      "aliasTarget": "/Applets/Scope XY-7.app"
+    },
+    {
+      "path": "/Desktop/Color.me",
+      "name": "Color.me",
+      "isDirectory": false,
+      "type": "alias",
+      "icon": "/icons/default/file-text.png",
+      "status": "active",
+      "aliasType": "file",
+      "aliasTarget": "/Applets/Color.me.app"
+    },
+    {
+      "path": "/Desktop/friend.radio",
+      "name": "friend.radio",
+      "isDirectory": false,
+      "type": "alias",
+      "icon": "/icons/default/file-text.png",
+      "status": "active",
+      "aliasType": "file",
+      "aliasTarget": "/Applets/friend.radio.app"
+    },
+    {
+      "path": "/Desktop/Music Mirror",
+      "name": "Music Mirror",
+      "isDirectory": false,
+      "type": "alias",
+      "icon": "/icons/default/file-text.png",
+      "status": "active",
+      "aliasType": "file",
+      "aliasTarget": "/Applets/Music Mirror.app"
+    },
+    {
+      "path": "/Desktop/Exponent",
+      "name": "Exponent",
+      "isDirectory": false,
+      "type": "alias",
+      "icon": "/icons/default/file-text.png",
+      "status": "active",
+      "aliasType": "file",
+      "aliasTarget": "/Applets/Exponent.app"
+    },
+    {
+      "path": "/Desktop/National Research Group",
+      "name": "National Research Group",
+      "isDirectory": false,
+      "type": "alias",
+      "icon": "/icons/default/file-text.png",
+      "status": "active",
+      "aliasType": "file",
+      "aliasTarget": "/Applets/National Research Group.app"
+    },
+    {
+      "path": "/Applets/About Me.app",
+      "name": "About Me.app",
+      "isDirectory": false,
+      "type": "html",
+      "icon": "/icons/default/file-text.png",
+      "status": "active",
+      "createdBy": "ryo",
+      "assetPath": "/assets/applets/case-studies/about-me.htm"
+    },
+    {
+      "path": "/Desktop/About Me",
+      "name": "About Me",
+      "isDirectory": false,
+      "type": "alias",
+      "icon": "/icons/default/file-text.png",
+      "status": "active",
+      "aliasType": "file",
+      "aliasTarget": "/Applets/About Me.app"
     }
   ]
 }

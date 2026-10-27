@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stellar Ads</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',sans-serif;background:#0a0a0a;color:#d4d4d4;line-height:1.75;-webkit-font-smoothing:antialiased}
+.container{max-width:680px;margin:0 auto;padding:48px 24px 96px}
+video{width:100%;border-radius:12px;margin-bottom:40px;background:#111}
+h1{font-size:28px;font-weight:700;color:#fff;margin-bottom:4px;letter-spacing:-0.5px}
+.meta{font-size:13px;color:#666;margin-bottom:32px;line-height:1.6}
+h2{font-size:20px;font-weight:600;color:#fff;margin-top:48px;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid #1a1a1a}
+h3{font-size:16px;font-weight:600;color:#e0e0e0;margin-top:28px;margin-bottom:10px}
+p{margin-bottom:16px;font-size:15px}
+img{width:100%;border-radius:8px;margin:24px 0}
+ul,ol{margin:12px 0 16px;padding-left:22px}
+li{margin-bottom:6px;font-size:15px}
+strong{color:#fff}
+em{color:#999}
+hr{border:none;border-top:1px solid #1a1a1a;margin:36px 0}
+.results{background:#111;border:1px solid #1a1a1a;border-radius:10px;padding:20px 24px;margin:20px 0}
+.results li{color:#7dd3fc}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:24px}
+.tag{background:#1a1a2e;color:#818cf8;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:500}
+</style>
+</head>
+<body>
+<div class="container">
+<video autoplay muted loop playsinline src="/assets/videos/portfolio/stellar-demo.mp4"></video>
+
+<h1>Stellar Ads</h1>
+<div class="meta">
+<strong>Role:</strong> Lead Product Designer<br>
+<strong>Timeline:</strong> April 2025 – Present<br>
+<strong>Team:</strong> Designer (me), 2 Engineers, Product Manager
+</div>
+<div class="tags">
+<span class="tag">0→1 Product Design</span>
+<span class="tag">UX Research</span>
+<span class="tag">Design Systems</span>
+</div>
+
+<h2>The Problem</h2>
+<p>Local business owners were running their operations across spreadsheets, sticky notes, and a patchwork of disconnected tools. Booking an appointment and tracking whether that client ever came back required manual effort that owners — who were also the ones cutting hair, training clients, and managing staff — simply didn't have time for.</p>
+<p>Existing CRMs weren't built for them. Salesforce costs $150/month and requires a consultant to set up. Square handles booking but stops there. Zoho is generic by design. None of them started from the reality of running a salon or a gym.</p>
+
+<h2>Impact</h2>
+<div class="results">
+<ul>
+<li>Booking time dropped from ~20 min to under 4 min per appointment — timed across 8 beta users</li>
+<li>12 of 15 beta businesses actively tracking client follow-ups for the first time</li>
+<li>8 of 9 users self-configured custom fields with zero guidance in their first week</li>
+<li>~2 hours/day estimated time savings based on pre-launch time-diary interviews</li>
+<li>4.7/5 average satisfaction across 23 beta businesses</li>
+<li>~40% increase in repeat booking rate across 6 tracked accounts over 3 months</li>
+</ul>
+</div>
+
+<h2>What I Found in Research</h2>
+<p>I interviewed 15 local business owners and surveyed 80 more. But the thing that actually changed the product wasn't a survey — it was a Tuesday morning I spent shadowing a salon owner.</p>
+<p>She never opened the contacts view. Not once. She worked entirely from her daily schedule: who's coming in, when, what they need. The contact database was something she'd look at later — if at all.</p>
+<p>That single observation flipped the information architecture. The booking calendar became the home screen. The contact dashboard got demoted. The product got simpler and more useful at the same time.</p>
+<p>Other things that stuck from research:</p>
+<ul>
+<li>68% of owners surveyed were still using spreadsheets for customer management</li>
+<li>Every industry had meaningfully different data needs — salons track color formulas and allergies, gyms track fitness goals and injury history, clinics track prescriptions</li>
+<li>Client retention was the pain point owners mentioned most after booking</li>
+</ul>
+<img src="/assets/images/portfolio/stellar-user-journey.jpg" alt="User Journey Map">
+
+<h2>Competitor Analysis</h2>
+<ul>
+<li><strong>Salesforce:</strong> Powerful but expensive, requires consultants</li>
+<li><strong>HubSpot:</strong> Marketing-focused, weak on operations</li>
+<li><strong>Square:</strong> Good booking, limited CRM features</li>
+<li><strong>Zoho:</strong> Affordable but generic</li>
+</ul>
+<p>Key gap: No CRM prioritizes booking as the core surface. Customization requires developers. Retention tools are afterthoughts.</p>
+<img src="/assets/images/portfolio/stellar-competitor-matrix.png" alt="Competitor Analysis Matrix">
+
+<h2>How I Designed It</h2>
+<h3>Booking-First Architecture</h3>
+<p>The calendar is the home screen. One-click scheduling, automated reminders, client history accessible without leaving the booking view.</p>
+<h3>No-Code Customization</h3>
+<p>A drag-and-drop field builder that lets owners add any data point — text, date, dropdown, file upload — and organize fields into sections. Industry templates give them a starting point. In testing, 7 of 8 owners used a template rather than a blank setup. 8 of 9 added at least one custom field without being prompted.</p>
+<h3>Retention by Design</h3>
+<p>Automated follow-up workflows and inactive client alerts built into the core product — not an add-on.</p>
+<h3>Progressive Disclosure</h3>
+<p>Start simple, get value on day one. More powerful features are there when owners are ready — not in their face on first launch.</p>
+<h3>A Call I'm Glad I Made</h3>
+<p>I pushed back on adding a customizable dashboard with drag-and-drop widgets. The team wanted it. But the real problem wasn't that users wanted more control over their layout — it was that they didn't know what to look at first. An opinionated layout with strong visual hierarchy solved the actual problem.</p>
+<img src="/assets/images/portfolio/information-architecture-stellar.jpg" alt="Information Architecture">
+
+<h2>Final Designs</h2>
+<img src="/assets/images/portfolio/Stellar-Design-iterations.jpg" alt="Design Iterations">
+<p>Industry customization examples:</p>
+<ul>
+<li><strong>Salon:</strong> Hair color formulas, allergies, preferred stylist</li>
+<li><strong>Gym:</strong> Fitness goals, injury history, membership tier</li>
+<li><strong>Clinic:</strong> Medical history, insurance info, prescriptions</li>
+</ul>
+
+<h2>Reflection</h2>
+<p><strong>Real business impact:</strong></p>
+<ul>
+<li><strong>Maria's Salon:</strong> Booking per appointment dropped from ~20 min to under 4 min; manually re-engaged 15 lapsed clients using retention alerts</li>
+<li><strong>FitCore Studio:</strong> New member drop-off in the first month fell from roughly 1 in 3 to under 1 in 8</li>
+</ul>
+<p><strong>What I'd do differently:</strong> I'd test across more industries earlier. The first two months were heavily salon-focused, which shaped assumptions I had to undo later.</p>
+<p><strong>What I took from this:</strong> Building 0→1 is mostly about sequencing decisions. Which pain point earns trust fastest? What can we defer without hurting the core experience? The booking-first call shaped everything downstream.</p>
+</div>
+</body>
+</html>

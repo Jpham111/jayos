@@ -192,6 +192,7 @@ export function App() {
   // For web: show on first visit and updates
   // For desktop shell: only show on updates (not first time)
   useEffect(() => {
+    return; // Disabled: no desktop app download prompt
     const desktopDownloadTarget = getSupportedDesktopDownloadTarget();
     const isInDesktop = getDesktopCapabilities().selfUpdate;
     appShellLog.debug("Evaluating desktop update prompt", {

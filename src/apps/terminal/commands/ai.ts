@@ -55,5 +55,5 @@ export const chatCommand: Command = {
 
 export const ryoCommand: Command = {
   ...aiCommand,
-  name: "ryo",
+  name: "jay",
 };

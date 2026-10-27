@@ -91,7 +91,7 @@ export function useChatInput({
     isRyoAdminUsername(username) && aiModel ? AI_MODELS[aiModel]?.name : null;
 
   const isTypingRyoMention =
-    isInChatRoom && (input.startsWith("@ryo ") || input === "@ryo");
+    isInChatRoom && (input.startsWith("@jay ") || input === "@jay");
 
   useEffect(() => {
     setIsTouchDevice("ontouchstart" in window || navigator.maxTouchPoints > 0);
@@ -239,7 +239,7 @@ export function useChatInput({
   const handleMentionClick = () => {
     let newValue = input;
 
-    if (input.startsWith("@ryo ")) {
+    if (input.startsWith("@jay ")) {
       inputRef.current?.focus();
       setTimeout(() => {
         if (inputRef.current) {
@@ -250,10 +250,10 @@ export function useChatInput({
         }
       }, 0);
       return;
-    } else if (input.startsWith("@ryo")) {
-      newValue = input.replace("@ryo", "@ryo ");
+    } else if (input.startsWith("@jay")) {
+      newValue = input.replace("@jay", "@jay ");
     } else {
-      newValue = `@ryo ${input}`.trim() + (input.endsWith(" ") ? "" : " ");
+      newValue = `@jay ${input}`.trim() + (input.endsWith(" ") ? "" : " ");
     }
 
     setInputAndResetHistory(newValue);

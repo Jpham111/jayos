@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>friend.radio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',sans-serif;background:#0a0a0a;color:#d4d4d4;line-height:1.75;-webkit-font-smoothing:antialiased}
+.container{max-width:680px;margin:0 auto;padding:48px 24px 96px}
+video{width:100%;border-radius:12px;margin-bottom:40px;background:#111}
+h1{font-size:28px;font-weight:700;color:#fff;margin-bottom:4px;letter-spacing:-0.5px}
+.meta{font-size:13px;color:#666;margin-bottom:32px;line-height:1.6}
+h2{font-size:20px;font-weight:600;color:#fff;margin-top:48px;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid #1a1a1a}
+h3{font-size:16px;font-weight:600;color:#e0e0e0;margin-top:28px;margin-bottom:10px}
+p{margin-bottom:16px;font-size:15px}
+img{width:100%;border-radius:8px;margin:24px 0}
+ul,ol{margin:12px 0 16px;padding-left:22px}
+li{margin-bottom:6px;font-size:15px}
+strong{color:#fff}
+em{color:#999}
+hr{border:none;border-top:1px solid #1a1a1a;margin:36px 0}
+.results{background:#111;border:1px solid #1a1a1a;border-radius:10px;padding:20px 24px;margin:20px 0}
+.results li{color:#7dd3fc}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:24px}
+.tag{background:#1a1a2e;color:#818cf8;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:500}
+</style>
+</head>
+<body>
+<div class="container">
+<video autoplay muted loop playsinline src="/assets/videos/portfolio/Friend-radio-demo.mp4"></video>
+
+<h1>friend.radio</h1>
+<div class="meta">
+<strong>Role:</strong> Product Designer &amp; Full-Stack Developer<br>
+<strong>Timeline:</strong> August – November 2024 (4 months)<br>
+<strong>Stack:</strong> Figma, Supabase, Firestore, Vercel
+</div>
+<div class="tags">
+<span class="tag">Consumer</span>
+<span class="tag">Solo Build</span>
+<span class="tag">Constraint-Driven Design</span>
+</div>
+
+<h2>The Problem</h2>
+<p>My friend group was stuck in music discovery fatigue. Spotify's algorithm had learned our taste so well it stopped surprising us. We'd recommend songs to each other in group chats and they'd get buried in three messages. No one was discovering anything new, and the recommendations from people whose taste I actually trusted were getting lost.</p>
+<p>The problem wasn't a lack of music. It was a lack of a shared place to put it that everyone would actually check.</p>
+
+<h2>Impact</h2>
+<div class="results">
+<ul>
+<li>All 12 users checked the app daily within the first 2 weeks — zero onboarding, 100% adoption</li>
+<li>Still active at 3 months — no drop-off after novelty wore off</li>
+<li>Morning check-ins became a routine; the group started referencing app discoveries in conversation</li>
+<li>~60% more new artists added to personal libraries, self-reported by 8 of 12 users at the 6-week mark</li>
+<li>Zero support requests — the app never needed explanation</li>
+</ul>
+</div>
+
+<h2>What Shaped the Design</h2>
+<p>I observed how my friends actually shared music before I designed anything. The pattern was consistent: someone would hear something they wanted to share, open a group chat, paste a link, and add "listen to this." Then it'd get buried.</p>
+<p>The behavior I wanted to preserve: one deliberate recommendation, from someone you trust, that feels worth checking. The behavior I wanted to eliminate: recommendations disappearing into feed noise.</p>
+<p>From there, the constraints almost wrote themselves:</p>
+<ul>
+<li><strong>One song per day.</strong> Forces curation. Nobody shares throwaway picks when they only get one slot. In testing, unlimited sharing immediately made the list feel like a feed.</li>
+<li><strong>24-hour reset.</strong> Creates just enough urgency to build a daily habit without feeling like homework.</li>
+<li><strong>Platform agnostic.</strong> Spotify, Apple Music, SoundCloud, YouTube — paste any URL.</li>
+</ul>
+
+<h2>How I Designed It</h2>
+<h3>One Song Per Day</h3>
+<p>Forces curation. Nobody shares throwaway picks when they only get one slot.</p>
+<h3>24-Hour Reset</h3>
+<p>Creates just enough urgency to build a daily habit without feeling like homework. Weekly reset didn't drive the same consistency in a 3-week trial.</p>
+<h3>Platform Agnostic via URL Paste</h3>
+<p>I had Spotify, Apple Music, and SoundCloud API auth flows half-written before I stopped. I was solving a discovery problem nobody actually had. My friends already knew what they wanted to share — the friction wasn't finding the song, it was that there was no shared place to post it. I killed the in-app search in week 3. The URL paste field became the entire submission experience. 11 of 12 users preferred it.</p>
+
+<h2>Design Process</h2>
+<img src="/assets/images/portfolio/design-process-1.jpg" alt="Design Process Step 1">
+<img src="/assets/images/portfolio/design-process-2.jpg" alt="Design Process Step 2">
+<img src="/assets/images/portfolio/design-process-3.jpg" alt="Design Process Step 3">
+<img src="/assets/images/portfolio/design-process-4.jpg" alt="Design Process Step 4">
+
+<h2>Reflection</h2>
+<p><strong>What I'd do differently:</strong> The design is intentionally minimal, but a few things users kept asking for have merit: song previews so you can hear a snippet before clicking through, and album artwork to give the daily list more visual pull. Neither would add complexity — they'd add warmth.</p>
+<p><strong>What I took from this:</strong> Killing the search feature was the most important product decision I made on this project. I had real engineering work invested in it. The feature worked. But it was solving a problem that didn't exist in the actual use case. Shipping a URL paste field instead of an in-app search saved weeks of development and made the product better.</p>
+</div>
+</body>
+</html>
