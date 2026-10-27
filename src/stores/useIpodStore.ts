@@ -1862,8 +1862,7 @@ export const useIpodStore = create<IpodState>()(
       },
       initializeLibrary: async () => {
         const current = get();
-        // Only initialize if the library is in uninitialized state
-        if (current.libraryState === "uninitialized") {
+        if (current.libraryState === "uninitialized" || (current.libraryState === "loaded" && current.tracks.length === 0)) {
           const { tracks, version } = await loadDefaultTracks();
           set({
             tracks,
@@ -1872,7 +1871,7 @@ export const useIpodStore = create<IpodState>()(
             currentFuriganaMap: null,
             libraryState: "loaded",
             lastKnownVersion: version,
-            playbackHistory: [], // Clear playback history when initializing library
+            playbackHistory: [],
             historyPosition: -1,
           });
         }
@@ -2728,8 +2727,7 @@ export const useIpodStore = create<IpodState>()(
         return (state, error) => {
           if (error) {
             console.error("Error rehydrating iPod store:", error);
-          } else if (state && state.libraryState === "uninitialized") {
-            // Only auto-initialize if library state is uninitialized
+          } else if (state && (state.libraryState === "uninitialized" || (state.libraryState === "loaded" && state.tracks.length === 0))) {
             Promise.resolve(state.initializeLibrary()).catch((err) =>
               console.error("Initialization failed on rehydrate", err)
             );
