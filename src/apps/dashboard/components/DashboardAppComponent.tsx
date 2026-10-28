@@ -195,6 +195,18 @@ const WIDGET_REGISTRY: Record<WidgetType, WidgetRegistryEntry> = {
       }))
     ),
   },
+  jaycard: {
+    front: lazyWidget<WidgetFrontProps>(() =>
+      import("@/components/layout/dashboard/JayCardWidget").then((module) => ({
+        default: module.JayCardWidget,
+      }))
+    ),
+    back: lazyWidget<WidgetBackProps>(() =>
+      import("@/components/layout/dashboard/JayCardWidget").then((module) => ({
+        default: module.JayCardBackPanel,
+      }))
+    ),
+  },
 };
 
 function WidgetContent({
@@ -283,6 +295,7 @@ function WidgetStrip({
     { type: "dictionary", label: t("apps.dashboard.widgets.dictionary", "Dictionary") },
     { type: "aquarium", label: t("apps.dashboard.widgets.aquarium", "Aquarium") },
     { type: "terrarium", label: t("apps.dashboard.widgets.terrarium", "Terrarium") },
+    { type: "jaycard", label: "Jay Card" },
   ];
 
   return (
@@ -472,6 +485,7 @@ export function DashboardAppComponent({
       onAddDictionary={() => handleAddWidget("dictionary")}
       onAddAquarium={() => handleAddWidget("aquarium")}
       onAddTerrarium={() => handleAddWidget("terrarium")}
+      onAddJayCard={() => handleAddWidget("jaycard")}
       onResetWidgets={resetToDefaults}
     />
   );

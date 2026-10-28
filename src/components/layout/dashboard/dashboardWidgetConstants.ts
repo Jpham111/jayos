@@ -22,6 +22,7 @@ export const WIDGET_ICONS: Record<WidgetType, string> = {
   dictionary: "/icons/dashboard-widgets/dictionary.png",
   aquarium: "🐠",
   terrarium: "🌿",
+  jaycard: "🌉",
 };
 
 export function isWidgetImageIcon(icon: string): boolean {

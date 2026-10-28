@@ -25,6 +25,7 @@ interface DashboardMenuBarProps {
   onAddDictionary: () => void;
   onAddAquarium: () => void;
   onAddTerrarium: () => void;
+  onAddJayCard: () => void;
   onResetWidgets: () => void;
 }
 
@@ -45,6 +46,7 @@ export function DashboardMenuBar({
   onAddDictionary,
   onAddAquarium,
   onAddTerrarium,
+  onAddJayCard,
   onResetWidgets,
 }: DashboardMenuBarProps) {
   const { t } = useTranslation();
@@ -130,6 +132,11 @@ export function DashboardMenuBar({
               "terrarium",
               t("apps.dashboard.widgets.terrarium", "Terrarium"),
               onAddTerrarium
+            ),
+            widgetItem(
+              "jaycard",
+              "Jay Card",
+              onAddJayCard
             ),
           ],
         },
