@@ -124,12 +124,6 @@ const DEFAULT_WIDGETS: DashboardWidget[] = [
     position: { x: 580, y: 120 },
     size: { width: 340, height: 180 },
   },
-  {
-    id: "default-jaycard",
-    type: "jaycard",
-    position: { x: 80, y: 320 },
-    size: { width: 300, height: 340 },
-  },
 ];
 
 const DASHBOARD_STORE_VERSION = 1;

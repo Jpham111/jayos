@@ -14,101 +14,57 @@ const SOCIALS = [
   { label: "GitHub", href: "https://github.com/Jpham111" },
 ];
 
-function PixelBridge() {
-  const P = "#dc2626";
-  const L = "#f87171";
-  const D = "#b91c1c";
+const BRIDGE_ASCII = `\
+   ^^                                                 .:
+        []                    ^^                  []
+      .:[]:_                                   ,;[]:.
+    .:  :[]:  :-.                          ,-:  :[]: :.
+   .:  :  :[]:  :  \`.                  ,.'  :  :[]:  : :.
+  .:  :  :  :[]:  :  ::-._        _,-::  :  :  :[]:  :  ::.
+ _.:  :  :  :[]:  :  :  ::-.____.-::  :  :  :  :[]:  :  :  :._
+ _:_:_:_:_:_:[]:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:[]:_:_:_:_:_:_
+ !!!!!!!!!!!!!![]!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!![]!!!!!!!!!!!!!!
+ ^^^^^^^^^^^^^^[]^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[]^^^^^^^^^^^^^^
+               []                                  []
+               []                                  []
+               []                                  []
+
+ ~~^~^^_~^/    \\~^~^^~_~^~_~~^~_~~~^~~^~~^^~_~/    \\~^~_~^^~~
+ ~ _~~-~^^_~^_~~-^^~_^~^^~__~^ _~-_~~^__~~_~_~^~^^~^_~^-~~^
+   ~ ^-_-~~_-~~ _~ ^~ -~^^~ -_ ^^~- ~~~^  -_ -~^_~
+     ~-  ^   ~ - ^^  -~^^~    ~~-   ~~^  ~-  ~~_-`;
+
+function BridgeArt() {
   return (
-    <svg
-      viewBox="0 0 48 28"
-      style={{ width: "100%", display: "block", imageRendering: "pixelated" }}
-      shapeRendering="crispEdges"
+    <pre
+      style={{
+        fontFamily: "'SF Mono', 'Menlo', 'Monaco', monospace",
+        fontSize: 5.2,
+        lineHeight: 1.15,
+        color: "#e85d3a",
+        textAlign: "center",
+        margin: 0,
+        overflow: "hidden",
+        textShadow: "0 0 4px rgba(232,93,58,0.3)",
+        whiteSpace: "pre",
+      }}
     >
-      {/* Water */}
-      <rect x="4" y="21" width="40" height="7" rx="3" fill="#0d7377" />
-      <rect x="8" y="22" width="3" height="1" fill="#14b8a6" opacity="0.6" />
-      <rect x="20" y="23" width="4" height="1" fill="#14b8a6" opacity="0.5" />
-      <rect x="34" y="22" width="3" height="1" fill="#14b8a6" opacity="0.6" />
-      <rect x="14" y="25" width="2" height="1" fill="#14b8a6" opacity="0.4" />
-      <rect x="28" y="24" width="3" height="1" fill="#14b8a6" opacity="0.3" />
-
-      {/* Deck */}
-      <rect x="2" y="19" width="44" height="2" fill={P} />
-
-      {/* Left tower — alternating red/light red stripes */}
-      <rect x="10" y="3" width="1" height="18" fill={P} />
-      <rect x="11" y="3" width="1" height="18" fill={L} />
-      <rect x="12" y="3" width="1" height="18" fill={P} />
-      <rect x="13" y="3" width="1" height="18" fill={L} />
-      <rect x="14" y="3" width="1" height="18" fill={P} />
-      <rect x="15" y="3" width="1" height="18" fill={L} />
-      <rect x="16" y="3" width="1" height="18" fill={P} />
-      {/* Left tower cap */}
-      <rect x="10" y="2" width="7" height="2" fill="#ef4444" />
-
-      {/* Right tower — alternating red/light red stripes */}
-      <rect x="31" y="3" width="1" height="18" fill={P} />
-      <rect x="32" y="3" width="1" height="18" fill={L} />
-      <rect x="33" y="3" width="1" height="18" fill={P} />
-      <rect x="34" y="3" width="1" height="18" fill={L} />
-      <rect x="35" y="3" width="1" height="18" fill={P} />
-      <rect x="36" y="3" width="1" height="18" fill={L} />
-      <rect x="37" y="3" width="1" height="18" fill={P} />
-      {/* Right tower cap */}
-      <rect x="31" y="2" width="7" height="2" fill="#ef4444" />
-
-      {/* Left outer cables — stepped catenary */}
-      <rect x="9" y="5" width="1" height="1" fill={P} />
-      <rect x="8" y="6" width="1" height="1" fill={P} />
-      <rect x="7" y="7" width="1" height="2" fill={P} />
-      <rect x="6" y="9" width="1" height="2" fill={P} />
-      <rect x="5" y="11" width="1" height="2" fill={P} />
-      <rect x="4" y="13" width="1" height="3" fill={P} />
-      <rect x="3" y="16" width="1" height="3" fill={P} />
-
-      {/* Center cables left half */}
-      <rect x="17" y="5" width="1" height="1" fill={P} />
-      <rect x="18" y="6" width="1" height="1" fill={P} />
-      <rect x="19" y="7" width="1" height="2" fill={P} />
-      <rect x="20" y="9" width="1" height="2" fill={P} />
-      <rect x="21" y="11" width="1" height="2" fill={P} />
-      <rect x="22" y="13" width="1" height="3" fill={P} />
-      <rect x="23" y="16" width="1" height="3" fill={P} />
-
-      {/* Center cables right half */}
-      <rect x="30" y="5" width="1" height="1" fill={P} />
-      <rect x="29" y="6" width="1" height="1" fill={P} />
-      <rect x="28" y="7" width="1" height="2" fill={P} />
-      <rect x="27" y="9" width="1" height="2" fill={P} />
-      <rect x="26" y="11" width="1" height="2" fill={P} />
-      <rect x="25" y="13" width="1" height="3" fill={P} />
-      <rect x="24" y="16" width="1" height="3" fill={P} />
-
-      {/* Right outer cables — stepped catenary */}
-      <rect x="38" y="5" width="1" height="1" fill={P} />
-      <rect x="39" y="6" width="1" height="1" fill={P} />
-      <rect x="40" y="7" width="1" height="2" fill={P} />
-      <rect x="41" y="9" width="1" height="2" fill={P} />
-      <rect x="42" y="11" width="1" height="2" fill={P} />
-      <rect x="43" y="13" width="1" height="3" fill={P} />
-      <rect x="44" y="16" width="1" height="3" fill={P} />
-
-      {/* Tower bases below deck */}
-      <rect x="12" y="21" width="3" height="3" fill={D} />
-      <rect x="33" y="21" width="3" height="3" fill={D} />
-    </svg>
+      {BRIDGE_ASCII}
+    </pre>
   );
 }
 
+/* ------------------------------------------------------------------ */
+/*  Shared helpers                                                     */
+/* ------------------------------------------------------------------ */
 function safeEmoji(code: number, isDay?: boolean): string {
   return getWeatherEmoji(code, isDay) || "☀️";
 }
 
-interface JayCardWidgetProps {
-  widgetId: string;
-}
-
-export function JayCardWidget({ widgetId: _widgetId }: JayCardWidgetProps) {
+/* ------------------------------------------------------------------ */
+/*  JayCard content (used by both Desktop card & Dashboard widget)     */
+/* ------------------------------------------------------------------ */
+export function JayCardContent() {
   const { snapshot } = useWeather(SF, { active: true, locale: "en" });
 
   const forecast = useMemo(
@@ -134,9 +90,9 @@ export function JayCardWidget({ widgetId: _widgetId }: JayCardWidgetProps) {
         userSelect: "none",
       }}
     >
-      {/* Pixel art Golden Gate Bridge */}
-      <div style={{ margin: "0 0 8px", padding: "0 8px" }}>
-        <PixelBridge />
+      {/* ASCII Golden Gate Bridge */}
+      <div style={{ margin: "0 0 8px" }}>
+        <BridgeArt />
       </div>
 
       {/* Weather row */}
@@ -242,6 +198,17 @@ export function JayCardWidget({ widgetId: _widgetId }: JayCardWidgetProps) {
       </div>
     </div>
   );
+}
+
+/* ------------------------------------------------------------------ */
+/*  Dashboard widget wrappers                                          */
+/* ------------------------------------------------------------------ */
+interface JayCardWidgetProps {
+  widgetId: string;
+}
+
+export function JayCardWidget({ widgetId: _widgetId }: JayCardWidgetProps) {
+  return <JayCardContent />;
 }
 
 export function JayCardBackPanel({

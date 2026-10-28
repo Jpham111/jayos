@@ -6,6 +6,7 @@ import { DesktopIconGrid } from "./DesktopIconGrid";
 import { DesktopDragRegion } from "./DesktopDragRegion";
 import { DesktopDynamicWallpaper } from "./DesktopDynamicWallpaper";
 import { DesktopStaticWallpaper } from "./DesktopStaticWallpaper";
+import { DesktopJayCard } from "./DesktopJayCard";
 
 export function Desktop(props: DesktopProps) {
   const d = useDesktop(props);
@@ -86,6 +87,7 @@ export function Desktop(props: DesktopProps) {
         onClose={d.closeContextMenu}
         items={d.getContextMenuItems()}
       />
+      <DesktopJayCard />
       <ConfirmDialog
         isOpen={d.isEmptyTrashDialogOpen}
         onOpenChange={d.setIsEmptyTrashDialogOpen}
