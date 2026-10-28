@@ -514,26 +514,6 @@
       "status": "active",
       "aliasType": "file",
       "aliasTarget": "/Applets/National Research Group.app"
-    },
-    {
-      "path": "/Applets/About Me.app",
-      "name": "About Me.app",
-      "isDirectory": false,
-      "type": "html",
-      "icon": "/icons/default/file-text.png",
-      "status": "active",
-      "createdBy": "ryo",
-      "assetPath": "/assets/applets/case-studies/about-me.htm"
-    },
-    {
-      "path": "/Desktop/About Me",
-      "name": "About Me",
-      "isDirectory": false,
-      "type": "alias",
-      "icon": "/icons/default/file-text.png",
-      "status": "active",
-      "aliasType": "file",
-      "aliasTarget": "/Applets/About Me.app"
     }
   ]
 }
