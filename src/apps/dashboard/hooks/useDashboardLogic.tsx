@@ -64,7 +64,7 @@ export function useDashboardLogic() {
         stickynote: { width: 200, height: 200 },
         translation: { width: 340, height: 170 },
         currency: { width: 340, height: 170 },
-        jaycard: { width: 300, height: 340 },
+        jaycard: { width: 560, height: 520 },
       };
       const size = sizeMap[type];
 
