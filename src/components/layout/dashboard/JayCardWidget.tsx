@@ -4,8 +4,19 @@ import type { WeatherLocation } from "@/lib/weather/types";
 import { getWeatherEmoji } from "@/lib/weather/openMeteo";
 import { Emoji } from "@/components/shared/Emoji";
 import { DASHBOARD_WIDGET_FONT } from "./dashboardWidgetConstants";
+import { useLaunchApp } from "@/hooks/useLaunchApp";
 
 const SF: WeatherLocation = { kind: "coords", lat: 37.7749, lon: -122.4194 };
+
+const WORK_ITEMS = [
+  { label: "Stellar Ads", path: "/Applets/Stellar Ads.app" },
+  { label: "National Research Group", path: "/Applets/National Research Group.app" },
+  { label: "Exponent", path: "/Applets/Exponent.app" },
+  { label: "Scope XY-7", path: "/Applets/Scope XY-7.app" },
+  { label: "Color.me", path: "/Applets/Color.me.app" },
+  { label: "friend.radio", path: "/Applets/friend.radio.app" },
+  { label: "Music Mirror", path: "/Applets/Music Mirror.app" },
+];
 
 const SOCIALS = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/jay-pham/" },
@@ -76,6 +87,7 @@ function safeEmoji(code: number, isDay?: boolean): string {
 /* ------------------------------------------------------------------ */
 export function JayCardContent() {
   const [light, setLight] = useState(false);
+  const launchApp = useLaunchApp();
   const { snapshot } = useWeather(SF, { active: true, locale: "en" });
 
   const forecast = useMemo(
@@ -213,6 +225,35 @@ export function JayCardContent() {
         </div>
         <div style={{ fontSize: 10, color: fgStrong, opacity: light ? 1 : 0.75, lineHeight: 1.6, marginTop: 6 }}>
           Hi, I'm a product designer with a deep appreciation for systems thinking, clean interfaces, and the small details that create great user experiences. I approach design as both a craft and a system—where every decision has purpose, and every detail has impact. Outside of work I like to be outdoors and go to Music festivals with friends!
+        </div>
+      </div>
+
+      {/* Work / Case Studies */}
+      <div style={{ marginBottom: 10 }}>
+        <div style={{ fontSize: 11, fontWeight: 600, color: fgStrong, marginBottom: 6, opacity: 0.7 }}>
+          Work
+        </div>
+        <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+          {WORK_ITEMS.map((w) => (
+            <button
+              key={w.label}
+              onClick={() => launchApp("applet-viewer", { initialData: { path: w.path, content: "" } })}
+              style={{
+                fontSize: 10,
+                color: linkColor,
+                background: linkBg,
+                border: `1px solid ${linkBorder}`,
+                borderRadius: 6,
+                padding: "3px 8px",
+                cursor: "pointer",
+                transition: "background 0.15s",
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.background = linkHover)}
+              onMouseLeave={(e) => (e.currentTarget.style.background = linkBg)}
+            >
+              {w.label}
+            </button>
+          ))}
         </div>
       </div>
 
