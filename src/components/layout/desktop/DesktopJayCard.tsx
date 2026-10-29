@@ -37,14 +37,16 @@ export function DesktopJayCard() {
         ...(centered
           ? { left: "50%", top: "50%", transform: "translate(-50%, -50%)" }
           : { left: pos.x, top: pos.y }),
-        width: 560,
+        width: "min(560px, calc(100vw - 32px))",
+        maxHeight: "calc(100vh - 100px)",
         borderRadius: 16,
         background: "rgba(30, 30, 30, 0.75)",
         backdropFilter: "blur(24px)",
         WebkitBackdropFilter: "blur(24px)",
         border: "1px solid rgba(255, 255, 255, 0.1)",
         boxShadow: "0 8px 32px rgba(0, 0, 0, 0.4)",
-        overflow: "hidden",
+        overflowX: "hidden" as const,
+        overflowY: "auto" as const,
         zIndex: 1,
         pointerEvents: "auto",
         cursor: dragging.current ? "grabbing" : "grab",

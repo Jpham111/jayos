@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useWeather, buildForecast } from "@/hooks/useWeather";
 import type { WeatherLocation } from "@/lib/weather/types";
 import { getWeatherEmoji } from "@/lib/weather/openMeteo";
@@ -51,6 +51,24 @@ const BRIDGE_WATER = `\
                  ~ ~- ^~ -  ~^ -  ~ ^~ - ~~  ^~ -`;
 
 function BridgeArt({ light }: { light?: boolean }) {
+  const wrapRef = useRef<HTMLDivElement>(null);
+  const innerRef = useRef<HTMLDivElement>(null);
+  const [dims, setDims] = useState({ scale: 1, mb: 0 });
+
+  useEffect(() => {
+    const wrap = wrapRef.current;
+    const inner = innerRef.current;
+    if (!wrap || !inner) return;
+    const update = () => {
+      const s = Math.min(1, wrap.clientWidth / inner.scrollWidth);
+      setDims({ scale: s, mb: (s - 1) * inner.scrollHeight });
+    };
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(wrap);
+    return () => ro.disconnect();
+  }, []);
+
   const shared: React.CSSProperties = {
     fontFamily: "'SF Mono', 'Menlo', 'Monaco', monospace",
     fontSize: 9.5,
@@ -64,13 +82,24 @@ function BridgeArt({ light }: { light?: boolean }) {
   const bridgeColor = light ? "#c44525" : "#e85d3a";
   const waterColor = light ? "#1a6dd4" : "#4a9eed";
   return (
-    <div style={{ width: "fit-content", margin: "0 auto" }}>
-      <pre style={{ ...shared, color: bridgeColor, textShadow: light ? "none" : "0 0 4px rgba(232,93,58,0.3)" }}>
-        {BRIDGE_TOP}
-      </pre>
-      <pre style={{ ...shared, color: waterColor, textShadow: light ? "none" : "0 0 4px rgba(74,158,237,0.3)" }}>
-        {BRIDGE_WATER}
-      </pre>
+    <div ref={wrapRef} style={{ width: "100%", overflow: "hidden" }}>
+      <div
+        ref={innerRef}
+        style={{
+          width: "fit-content",
+          margin: "0 auto",
+          transform: `scale(${dims.scale})`,
+          transformOrigin: "top center",
+          marginBottom: dims.mb,
+        }}
+      >
+        <pre style={{ ...shared, color: bridgeColor, textShadow: light ? "none" : "0 0 4px rgba(232,93,58,0.3)" }}>
+          {BRIDGE_TOP}
+        </pre>
+        <pre style={{ ...shared, color: waterColor, textShadow: light ? "none" : "0 0 4px rgba(74,158,237,0.3)" }}>
+          {BRIDGE_WATER}
+        </pre>
+      </div>
     </div>
   );
 }
