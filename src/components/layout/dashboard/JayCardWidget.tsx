@@ -9,6 +9,7 @@ const SF: WeatherLocation = { kind: "coords", lat: 37.7749, lon: -122.4194 };
 
 const SOCIALS = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/jay-pham/" },
+  { label: "Resume", href: "/assets/jay-pham-resume.pdf" },
   { label: "Instagram", href: "https://www.instagram.com/j.pham25" },
   { label: "Email", href: "mailto:jay.pham25@gmail.com" },
   { label: "GitHub", href: "https://github.com/Jpham111" },
