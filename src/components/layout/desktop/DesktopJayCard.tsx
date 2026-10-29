@@ -2,11 +2,18 @@ import { useCallback, useRef, useState } from "react";
 import { JayCardContent } from "@/components/layout/dashboard/JayCardWidget";
 
 export function DesktopJayCard() {
-  const [pos, setPos] = useState({ x: 20, y: -1 });
+  const [pos, setPos] = useState<{ x: number; y: number } | null>(null);
   const dragging = useRef<{ ox: number; oy: number } | null>(null);
+  const cardRef = useRef<HTMLDivElement>(null);
 
   const onPointerDown = useCallback((e: React.PointerEvent) => {
-    dragging.current = { ox: e.clientX - pos.x, oy: e.clientY - pos.y };
+    const el = cardRef.current;
+    if (!el) return;
+    const rect = el.getBoundingClientRect();
+    const currentX = rect.left;
+    const currentY = rect.top;
+    if (!pos) setPos({ x: currentX, y: currentY });
+    dragging.current = { ox: e.clientX - currentX, oy: e.clientY - currentY };
     (e.target as HTMLElement).setPointerCapture(e.pointerId);
   }, [pos]);
 
@@ -17,18 +24,19 @@ export function DesktopJayCard() {
 
   const onPointerUp = useCallback(() => { dragging.current = null; }, []);
 
-  const bottom = pos.y === -1 ? 80 : undefined;
-  const top = pos.y === -1 ? undefined : pos.y;
+  const centered = !pos;
 
   return (
     <div
+      ref={cardRef}
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={onPointerUp}
       style={{
         position: "absolute",
-        left: pos.x,
-        ...(bottom !== undefined ? { bottom } : { top }),
+        ...(centered
+          ? { left: "50%", top: "50%", transform: "translate(-50%, -50%)" }
+          : { left: pos.x, top: pos.y }),
         width: 560,
         borderRadius: 16,
         background: "rgba(30, 30, 30, 0.75)",
